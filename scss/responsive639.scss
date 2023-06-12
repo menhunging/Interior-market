@@ -43,8 +43,38 @@
     gap: 16px;
   }
 
-  .footer__bottom .logo-wrapper {
-    margin: 0 auto;
-    width: 235px;
+  .footer__bottom {
+    .logo-wrapper {
+      margin: 0 auto;
+      width: 235px;
+    }
+  }
+
+  .grettings {
+    &__content {
+      @include transform(translateY(20px));
+    }
+
+    &__item {
+      font-size: 24px;
+      line-height: 24px;
+      height: 548px;
+      @include border-radius-bottom-left(56px);
+      @include border-radius-bottom-right(56px);
+    }
+
+    &__slider {
+    }
+
+    .icon {
+      width: 195px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .grettings__slider .swiper-pagination {
+    margin-top: 40px;
+    padding: 0 16px;
+    gap: 30px;
   }
 }

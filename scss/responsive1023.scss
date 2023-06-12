@@ -212,4 +212,31 @@
       }
     }
   }
+
+  .grettings {
+    &__item {
+      @include border-radius-top-left(0);
+      @include border-radius-top-right(0);
+      filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01))
+        drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04))
+        drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07))
+        drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08))
+        drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
+      height: 627px;
+    }
+
+    &__slider {
+      position: relative;
+      left: -12px;
+      width: calc(100% + 24px);
+    }
+  }
+
+  .grettings__slider {
+    .swiper-pagination {
+      gap: 35px;
+      padding: 0 35px;
+      margin-top: 50px;
+    }
+  }
 }
