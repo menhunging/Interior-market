@@ -1,0 +1,164 @@
+.header {
+  &__inner {
+    padding: 32px 0;
+  }
+}
+
+.header-top {
+  background-color: $colorBlack;
+  @include border-radius(16px);
+  width: 100%;
+  color: $colorWhite;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__adress {
+  }
+  &__time {
+  }
+}
+
+.site-price {
+  margin-left: 24px;
+  cursor: pointer;
+
+  &__text {
+  }
+  &__currency {
+  }
+  &__arrow {
+    margin-left: 11px;
+
+    path {
+      fill: $colorWhite;
+    }
+  }
+}
+
+.menu {
+  margin: 0 auto;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  a {
+    @include text-decoration-hover($colorWhite);
+  }
+}
+
+.header-center {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .logo-wrapper {
+    margin: 0 auto;
+    @include transform(translateX(62px));
+  }
+}
+
+.burger-mobile {
+  display: none;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+
+  &__line {
+    width: 100%;
+    max-width: 12px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    @include border-radius(15px);
+    @include transition(all 0.3s);
+    background-color: $colorBlack;
+    position: relative;
+  }
+
+  &.active {
+    .burger__line {
+      &:nth-child(1) {
+        @include transform(rotate(45deg));
+        top: 4px;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        @include transform(rotate(-45deg));
+        top: -4px;
+      }
+    }
+  }
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__button {
+    cursor: pointer;
+    @include border-radius(50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: solid 1px $colorBlack;
+
+    path {
+      fill: $colorBlack;
+    }
+  }
+
+  .link-block {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+.header-center__info {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  ul {
+    display: flex;
+    gap: 24px;
+  }
+
+  a {
+    @include text-decoration-hover($colorBlack);
+  }
+}
+
+.header-bottom__sections {
+  @include transform(translateX(30px));
+}
+
+.header-top__adress {
+  max-width: 240px;
+}

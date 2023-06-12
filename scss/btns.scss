@@ -1,0 +1,45 @@
+.btn {
+  -webkit-appearance: none;
+  @include border-radius(0);
+  position: relative;
+  @include transition(all 0.3s);
+  @include border-radius(30px);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $colorBlack;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid transparent;
+
+  &.btn-white {
+    background-color: $colorWhite;
+    border-color: $colorBlack;
+
+    &:hover {
+      background-color: $colorBlack;
+      color: $colorWhite;
+    }
+  }
+}
+
+.btn-basket {
+  position: relative;
+
+  &__count {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $colorWhite;
+    width: 24px;
+    height: 17px;
+    position: absolute;
+    right: -15px;
+    bottom: -1px;
+    @include border-radius(56px);
+    background-color: #bb0909;
+  }
+}

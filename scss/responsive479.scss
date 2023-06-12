@@ -1,0 +1,18 @@
+@media (max-width: 479px) {
+  .menu {
+    margin: 0;
+    width: 100%;
+
+    ul {
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+
+
+}
+@media (max-width: 349px) {
+  .header-center {
+    padding: 8px 12px;
+  }
+}

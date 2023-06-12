@@ -1,0 +1,50 @@
+@media (max-width: 639px) {
+  .header-controls__button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-controls .link-block {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-center .header-controls {
+    gap: 8px;
+  }
+
+  .header-center .logo-wrapper {
+    width: 136px;
+  }
+
+  .burger-mobile {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  .header-center {
+    padding: 8px 16px;
+  }
+
+  .btn-basket__count {
+    width: 13px;
+    height: 12px;
+    font-size: 8px;
+    line-height: 8px;
+    right: -8px;
+  }
+
+  .social-list {
+    flex-direction: column;
+  }
+
+  .social-list {
+    gap: 16px;
+  }
+
+  .footer__bottom .logo-wrapper {
+    margin: 0 auto;
+    width: 235px;
+  }
+}
