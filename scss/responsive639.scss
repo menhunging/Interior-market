@@ -77,4 +77,39 @@
     padding: 0 16px;
     gap: 30px;
   }
+
+  .caption {
+    font-size: 24px;
+    line-height: 24px;
+    max-width: 500px;
+    max-width: 303px;
+  }
+
+  .grettings {
+    padding-bottom: 48px;
+  }
+
+  .category-section {
+    .container {
+      padding: 0 17px;
+    }
+  }
+
+  .slider-caterogy {
+    .swiper-slide{
+      height: 253px;
+      @include border-radius(32px);
+      padding: 13px;
+    }
+  }
+
+  .slider-caterogy__link{
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 16px;
+  }
+
+  .category-section{
+    padding: 56px 0;
+  }
 }

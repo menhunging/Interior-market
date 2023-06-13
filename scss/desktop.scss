@@ -2,6 +2,10 @@
   overflow: hidden;
   padding-bottom: 64px;
 
+  & + .category-section {
+    padding-top: 0;
+  }
+
   &__content {
     margin-top: auto;
     text-align: center;
@@ -93,8 +97,8 @@
       width: 0;
       height: 100%;
       background-color: #ecebeb;
-      left:0;
-      top:0;
+      left: 0;
+      top: 0;
       @include border-radius(2px);
     }
   }
@@ -107,5 +111,108 @@
 
   .swiper-slide-active {
     opacity: 1 !important;
+  }
+}
+
+.category-section {
+  padding: 80px 0;
+  overflow-x: hidden;
+}
+
+.slider-caterogy {
+  position: relative;
+  overflow: visible;
+  margin-top: 64px;
+
+  .swiper-wrapper {
+  }
+
+  .swiper-slide {
+    position: relative;
+    height: 432px;
+    @include border-radius(72px);
+    overflow: hidden;
+    filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01))
+      drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04))
+      drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07))
+      drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08))
+      drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 32px;
+    $transition: opacity 0.3s, transform 0.3s;
+    @include transition($transition);
+    @include invisLink;
+    opacity: 0;
+
+    &.swiper-slide-next,
+    &.swiper-slide-active {
+      opacity: 1;
+
+      & + .swiper-slide {
+        opacity: 1;
+        & + .swiper-slide {
+          opacity: 1;
+        }
+      }
+    }
+
+    &:hover {
+      @include transform(scale(1.05));
+    }
+  }
+
+  .picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .swiper-pagination-fraction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $colorBlack;
+    bottom: auto;
+    left: auto;
+    right: 0;
+    top: -88px;
+    width: auto;
+  }
+
+  .swiper-pagination-current {
+  }
+
+  .swiper-pagination-total {
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $colorBlack;
+    background: $colorWhite;
+    box-shadow: 0px 87px 35px rgba(0, 0, 0, 0.01),
+      0px 49px 29px rgba(0, 0, 0, 0.04), 0px 22px 22px rgba(0, 0, 0, 0.07),
+      0px 5px 12px rgba(0, 0, 0, 0.08), 0px 0px 0px rgba(0, 0, 0, 0.08);
+    padding: 9px 24px 11px;
+    @include border-radius(12px);
   }
 }
