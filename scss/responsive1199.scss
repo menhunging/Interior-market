@@ -34,4 +34,23 @@
   .text-section__content {
     max-width: 455px;
   }
+
+  .product-info__content {
+    max-width: 425px;
+  }
+
+  .product-info__picture {
+    width: calc(100% - 455px);
+  }
+
+  .about-brand__item {
+    flex-direction: column;
+    gap: 0;
+    justify-content: flex-start;
+  }
+
+  .about-brand__content {
+    width: 100%;
+    margin-top: 37px;
+  }
 }

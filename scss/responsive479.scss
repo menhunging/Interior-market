@@ -9,10 +9,32 @@
     }
   }
 
-
+  .product-info__availability {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 349px) {
   .header-center {
     padding: 8px 12px;
+  }
+
+  .product-info__details {
+    ul {
+      gap: 25px;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: 100%;
+      }
+    }
+  }
+
+  .about-brand__item {
+    width: 100%;
+
+    & + .about-brand__item {
+      margin-top: 30px;
+    }
   }
 }

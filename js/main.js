@@ -36,7 +36,7 @@ $(document).ready(function () {
     });
   }
 
-   if ($(".products__slider").length > 0) {
+  if ($(".products__slider").length > 0) {
     const sliders = document.querySelectorAll(".products__slider");
     let mySwipers = [];
 

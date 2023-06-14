@@ -208,4 +208,99 @@
       @include border-radius(16px);
     }
   }
+
+  .breadcrumbs {
+    padding: 24px 4px;
+
+    &__list {
+      gap: 0px 29px;
+    }
+  }
+
+  .product-info {
+    .container {
+      padding: 0 15px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+
+    .percent-sale {
+      left: 18px;
+      top: 22px;
+    }
+  }
+
+  .product-info__wrapper {
+    @include border-radius(32px);
+  }
+
+  .product-info__content {
+    padding-top: 5px;
+  }
+
+  .product-info__controls {
+    margin: 24px 0;
+  }
+
+  .product-info__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .product-info__availability {
+    font-size: 14px;
+    gap: 10px;
+    margin-top: 16px;
+
+    .product-card__availability {
+      font-size: 14px;
+    }
+  }
+
+  .product-info__price {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 16px;
+
+    .old {
+      order: 1;
+    }
+    .current {
+      order: 2;
+    }
+  }
+
+  .product-info__btn {
+    margin-top: 23px;
+  }
+
+  .product-info__details {
+    padding: 23px 0;
+
+    ul {
+      grid-template-columns: minmax(auto, 148px) 1fr;
+      gap: 24px 32px;
+    }
+  }
+
+  .about-brand {
+    padding: 37px 0;
+
+    .container {
+      padding: 0 15px;
+    }
+  }
+
+  .about-brand__item {
+    width: calc(50% - 10px);
+  }
+
+  .about-brand__picture {
+    height: 163px;
+  }
 }
