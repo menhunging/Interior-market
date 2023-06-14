@@ -16,6 +16,66 @@ $(document).ready(function () {
     }
   }
 
+  if ($(".video-section").length > 0) {
+    $(".video__btn--full").on("click", function () {
+      let elem = $(this).parents(".video").find("video")[0];
+      openFullVideo(elem);
+    });
+
+    $(".video__btn--volume").on("click", function () {
+      let elem = $(this).parents(".video").find("video");
+      let isMuted = elem.prop("muted");
+      elem.prop("muted", isMuted);
+    });
+
+    $(".video__btn--play").on("click", function () {
+      let elem = $(this).parents(".video").find("video");
+
+      $(this).toggleClass("paused");
+      $(this).hasClass("paused") ? elem.trigger("play") : elem.trigger("pause");
+    });
+  }
+
+   if ($(".products__slider").length > 0) {
+    const sliders = document.querySelectorAll(".products__slider");
+    let mySwipers = [];
+
+    function sliderinit() {
+      sliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 4,
+            spaceBetween: 32,
+            on: {
+              init: function (swiper) {},
+              slideChange: function (swiper) {},
+            },
+            breakpoints: {
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+              },
+              350: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+              },
+              740: {
+                slidesPerView: 3,
+              },
+              1200: {
+                slidesPerView: 4,
+              },
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
+
+    sliders.length && sliderinit();
+  }
+
   // ---------------------------------------
 
   // if ($(".phoneInput").length > 0) {
@@ -111,5 +171,17 @@ function destroyFooterAccardeon() {
     $(".js-mobile-open").off("click").removeClass("open");
     $(".footer-column__body").slideDown();
     $(".footer").removeClass("accardeon-initialization");
+  }
+}
+
+function openFullVideo(elem) {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) {
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) {
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
   }
 }

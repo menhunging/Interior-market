@@ -6,14 +6,14 @@
   color: $colorBlack;
   max-width: 835px;
   width: 100%;
+}
 
-  &a,
-  a {
-    @include transition(text-decoration 0.3s);
-    text-decoration: underline;
+.caption a,
+a.caption {
+  @include transition(text-decoration 0.3s);
+  text-decoration: underline;
 
-    &:hover {
-      text-decoration-color: transparent;
-    }
+  &:hover {
+    text-decoration-color: transparent;
   }
 }

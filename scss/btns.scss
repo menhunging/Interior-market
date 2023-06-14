@@ -11,6 +11,7 @@
   text-align: center;
   padding: 16px;
   border: 1px solid transparent;
+  display: inline-block;
 
   &.btn-white {
     background-color: $colorWhite;
@@ -19,6 +20,31 @@
     &:hover {
       background-color: $colorBlack;
       color: $colorWhite;
+    }
+  }
+
+  &.btn-black {
+    background-color: $colorBlack;
+    border-color: $colorBlack;
+    color: $colorWhite;
+    text-transform: uppercase;
+
+    &:hover {
+    }
+  }
+
+  svg {
+    path {
+      fill: $colorBlack;
+      @include transition(fill 0.3s);
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $colorWhite;
+      }
     }
   }
 }
