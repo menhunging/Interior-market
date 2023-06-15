@@ -45,11 +45,11 @@
     overflow: hidden;
     @include border-radius(72px);
     opacity: 0 !important;
-    filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01))
-      drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04))
-      drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07))
-      drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08))
-      drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
+    // filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01))
+    //   drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04))
+    //   drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07))
+    //   drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08))
+    //   drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
 
     .btn {
       margin-top: auto;
@@ -149,11 +149,11 @@
     height: 432px;
     @include border-radius(72px);
     overflow: hidden;
-    filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01))
-      drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04))
-      drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07))
-      drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08))
-      drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
+    // filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01))
+    //   drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04))
+    //   drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07))
+    //   drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08))
+    //   drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -271,11 +271,11 @@
   @include border-radius(72px);
   overflow: hidden;
   padding-bottom: 48px;
-  filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01))
-    drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04))
-    drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07))
-    drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08))
-    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
+  // filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01))
+  //   drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04))
+  //   drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07))
+  //   drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08))
+  //   drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
 
   video {
     position: absolute;
@@ -362,11 +362,11 @@
     display: block;
     width: 100%;
     max-width: 789px;
-    filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01))
-      drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04))
-      drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07))
-      drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08))
-      drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
+    // filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01))
+    //   drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04))
+    //   drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07))
+    //   drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08))
+    //   drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
     flex: 1;
 
     img {
@@ -654,11 +654,11 @@
 }
 
 .product-info__wrapper {
-  filter: drop-shadow(0px 97px 39px rgba(189, 189, 189, 0.01))
-    drop-shadow(0px 55px 33px rgba(189, 189, 189, 0.04))
-    drop-shadow(0px 24px 24px rgba(189, 189, 189, 0.07))
-    drop-shadow(0px 6px 13px rgba(189, 189, 189, 0.08))
-    drop-shadow(0px 0px 0px rgba(189, 189, 189, 0.08));
+  // filter: drop-shadow(0px 97px 39px rgba(189, 189, 189, 0.01))
+  //   drop-shadow(0px 55px 33px rgba(189, 189, 189, 0.04))
+  //   drop-shadow(0px 24px 24px rgba(189, 189, 189, 0.07))
+  //   drop-shadow(0px 6px 13px rgba(189, 189, 189, 0.08))
+  //   drop-shadow(0px 0px 0px rgba(189, 189, 189, 0.08));
   @include border-radius(56px);
   overflow: hidden;
 }
@@ -1075,14 +1075,23 @@
 }
 
 .category-text {
-  .picture {
-    width: 100%;
-    @include border-radius(72px);
-    filter: drop-shadow(0px 97px 39px rgba(189, 189, 189, 0.01))
+
+  .test{
+        filter: drop-shadow(0px 97px 39px rgba(189, 189, 189, 0.01))
       drop-shadow(0px 55px 33px rgba(189, 189, 189, 0.04))
       drop-shadow(0px 24px 24px rgba(189, 189, 189, 0.07))
       drop-shadow(0px 6px 13px rgba(189, 189, 189, 0.08))
       drop-shadow(0px 0px 0px rgba(189, 189, 189, 0.08));
+  }
+
+  .picture {
+    width: 100%;
+    @include border-radius(72px);
+    // filter: drop-shadow(0px 97px 39px rgba(189, 189, 189, 0.01))
+    //   drop-shadow(0px 55px 33px rgba(189, 189, 189, 0.04))
+    //   drop-shadow(0px 24px 24px rgba(189, 189, 189, 0.07))
+    //   drop-shadow(0px 6px 13px rgba(189, 189, 189, 0.08))
+    //   drop-shadow(0px 0px 0px rgba(189, 189, 189, 0.08));
     position: relative;
     overflow: hidden;
     padding-top: calc(480 / 1376 * 100%);

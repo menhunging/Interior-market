@@ -1231,7 +1231,6 @@ a.caption:hover {
   -ms-border-radius: 72px;
   border-radius: 72px;
   opacity: 0 !important;
-  filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01)) drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04)) drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07)) drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
 }
 .grettings__item .btn {
   margin-top: auto;
@@ -1332,7 +1331,6 @@ a.caption:hover {
   -ms-border-radius: 72px;
   border-radius: 72px;
   overflow: hidden;
-  filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01)) drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04)) drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07)) drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -1453,7 +1451,6 @@ a.caption:hover {
   border-radius: 72px;
   overflow: hidden;
   padding-bottom: 48px;
-  filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01)) drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04)) drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07)) drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
 }
 .video video {
   position: absolute;
@@ -1538,7 +1535,6 @@ a.caption:hover {
   display: block;
   width: 100%;
   max-width: 789px;
-  filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01)) drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04)) drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07)) drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
   flex: 1;
 }
 .text-section__picture img {
@@ -1836,7 +1832,6 @@ a.caption:hover {
 }
 
 .product-info__wrapper {
-  filter: drop-shadow(0px 97px 39px rgba(189, 189, 189, 0.01)) drop-shadow(0px 55px 33px rgba(189, 189, 189, 0.04)) drop-shadow(0px 24px 24px rgba(189, 189, 189, 0.07)) drop-shadow(0px 6px 13px rgba(189, 189, 189, 0.08)) drop-shadow(0px 0px 0px rgba(189, 189, 189, 0.08));
   -webkit-border-radius: 56px;
   -moz-border-radius: 56px;
   -ms-border-radius: 56px;
@@ -2213,13 +2208,15 @@ a.caption:hover {
   border-radius: 36px;
 }
 
+.category-text .test {
+  filter: drop-shadow(0px 97px 39px rgba(189, 189, 189, 0.01)) drop-shadow(0px 55px 33px rgba(189, 189, 189, 0.04)) drop-shadow(0px 24px 24px rgba(189, 189, 189, 0.07)) drop-shadow(0px 6px 13px rgba(189, 189, 189, 0.08)) drop-shadow(0px 0px 0px rgba(189, 189, 189, 0.08));
+}
 .category-text .picture {
   width: 100%;
   -webkit-border-radius: 72px;
   -moz-border-radius: 72px;
   -ms-border-radius: 72px;
   border-radius: 72px;
-  filter: drop-shadow(0px 97px 39px rgba(189, 189, 189, 0.01)) drop-shadow(0px 55px 33px rgba(189, 189, 189, 0.04)) drop-shadow(0px 24px 24px rgba(189, 189, 189, 0.07)) drop-shadow(0px 6px 13px rgba(189, 189, 189, 0.08)) drop-shadow(0px 0px 0px rgba(189, 189, 189, 0.08));
   position: relative;
   overflow: hidden;
   padding-top: 34.8837209302%;
@@ -2539,7 +2536,6 @@ a.caption:hover {
     -moz-border-radius-topright: 0;
     -ms-border-top-right-radius: 0;
     border-top-right-radius: 0;
-    filter: drop-shadow(0px 87px 35px rgba(0, 0, 0, 0.01)) drop-shadow(0px 49px 29px rgba(0, 0, 0, 0.04)) drop-shadow(0px 22px 22px rgba(0, 0, 0, 0.07)) drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.08)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
     height: 627px;
   }
   .grettings__slider {
