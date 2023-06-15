@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
-    <title>Карточка товара</title>
+    <title>Категория</title>
 
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
@@ -163,153 +163,667 @@
                     <ul class="breadcrumbs__list">
                         <li><a href="#">Мебель</a></li>
                         <li><a href="#">Мягкая мебель</a></li>
-                        <li><a href="#">Диваны</a></li>
-                        <li><span>Диван, угол справа / Alexander & Alexander "Drop" / ткань-cat.G art.Kita melange
-                                col.Grafi</span></li>
+                        <li><span>Диваны</span></li>
                     </ul>
                 </div>
             </seciton>
 
-            <section class="product-info">
+            <section class="video-section">
                 <div class="container">
-                    <div class="product-info__inner">
-                        <div class="product-info__picture">
-                            <div class="product-info__wrapper">
-                                <span class="percent-sale"> -30% </span>
-                                <div class="product-info__slider swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="product-info__item">
-                                                <picture class='picture'>
-                                                    <source type="image/webp" srcset="../../img/pic-product.webp">
-                                                    <img src="../../img/pic-product.jpg" alt="">
-                                                </picture>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-info__item">
-                                                <picture class='picture'>
-                                                    <source type="image/webp" srcset="../../img/pic-product.webp">
-                                                    <img src="../../img/pic-product.jpg" alt="">
-                                                </picture>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-info__item">
-                                                <picture class='picture'>
-                                                    <source type="image/webp" srcset="../../img/pic-product.webp">
-                                                    <img src="../../img/pic-product.jpg" alt="">
-                                                </picture>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-info__item">
-                                                <picture class='picture'>
-                                                    <source type="image/webp" srcset="../../img/pic-product.webp">
-                                                    <img src="../../img/pic-product.jpg" alt="">
-                                                </picture>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="product-info__item">
-                                                <picture class='picture'>
-                                                    <source type="image/webp" srcset="../../img/pic-product.webp">
-                                                    <img src="../../img/pic-product.jpg" alt="">
-                                                </picture>
-                                            </div>
-                                        </div>
+                    <div class="video">
+                        <video width="100%" height="100%" poster="../../img/video-poster2.webp">
+                            <source src="../../img/video/video.webm" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                        <div class="video__text">
+                            <img src="../../img/video-text2.svg" alt="">
+                        </div>
+                        <a href="#" class="btn btn-white">К покупкам!</a>
+
+                        <div class="video__btn video__btn--play">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.25 1.5V16.5C17.2495 16.8977 17.0914 17.279 16.8102 17.5602C16.529 17.8414 16.1477 17.9995 15.75 18H12.375C11.9773 17.9995 11.596 17.8414 11.3148 17.5602C11.0336 17.279 10.8755 16.8977 10.875 16.5V1.5C10.8755 1.10231 11.0336 0.721048 11.3148 0.439842C11.596 0.158636 11.9773 0.000454817 12.375 0H15.75C16.1477 0.000454817 16.529 0.158636 16.8102 0.439842C17.0914 0.721048 17.2495 1.10231 17.25 1.5ZM5.625 0H2.25C1.85231 0.000454817 1.47105 0.158636 1.18984 0.439842C0.908636 0.721048 0.750455 1.10231 0.75 1.5V16.5C0.750455 16.8977 0.908636 17.279 1.18984 17.5602C1.47105 17.8414 1.85231 17.9995 2.25 18H5.625C6.02269 17.9995 6.40395 17.8414 6.68516 17.5602C6.96636 17.279 7.12455 16.8977 7.125 16.5V1.5C7.12455 1.10231 6.96636 0.721048 6.68516 0.439842C6.40395 0.158636 6.02269 0.000454817 5.625 0Z" />
+                            </svg>
+                        </div>
+
+                        <div class="video__btn video__btn--volume">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.579 0.325888C13.453 0.264254 13.3121 0.239265 13.1725 0.253768C13.0329 0.268271 12.9002 0.321683 12.7895 0.40792L6.24164 5.49972H1.99945C1.60175 5.50011 1.22044 5.65827 0.939225 5.93949C0.658005 6.22071 0.499844 6.60201 0.499451 6.99972V12.9997C0.499844 13.3974 0.658005 13.7787 0.939225 14.0599C1.22044 14.3412 1.60175 14.4993 1.99945 14.4997H6.24164L12.7895 19.5915C12.9002 19.6778 13.033 19.7312 13.1726 19.7457C13.3123 19.7601 13.4532 19.7351 13.5793 19.6734C13.7054 19.6118 13.8116 19.5159 13.8859 19.3968C13.9602 19.2777 13.9995 19.1401 13.9995 18.9997V0.999717C13.9995 0.859293 13.9602 0.721668 13.8858 0.60253C13.8115 0.483393 13.7052 0.387537 13.579 0.325888Z" />
+                                <path
+                                    d="M16.9995 7C16.8005 7.00001 16.6098 7.07903 16.4691 7.21968C16.3285 7.36033 16.2495 7.55109 16.2495 7.75V12.25C16.2495 12.4489 16.3285 12.6397 16.4691 12.7803C16.6098 12.921 16.8005 13 16.9995 13C17.1984 13 17.3891 12.921 17.5298 12.7803C17.6704 12.6397 17.7495 12.4489 17.7495 12.25V7.75C17.7494 7.55109 17.6704 7.36033 17.5298 7.21968C17.3891 7.07903 17.1984 7.00001 16.9995 7Z" />
+                                <path
+                                    d="M19.9995 5.5C19.8005 5.50001 19.6098 5.57903 19.4691 5.71968C19.3285 5.86033 19.2495 6.05109 19.2495 6.25V13.75C19.2495 13.9489 19.3285 14.1397 19.4691 14.2803C19.6098 14.421 19.8005 14.5 19.9995 14.5C20.1984 14.5 20.3891 14.421 20.5298 14.2803C20.6704 14.1397 20.7495 13.9489 20.7495 13.75V6.25C20.7494 6.05109 20.6704 5.86033 20.5298 5.71968C20.3891 5.57903 20.1984 5.50001 19.9995 5.5Z" />
+                            </svg>
+                        </div>
+
+                        <div class="video__btn video__btn--full">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5 0.75H12.75C12.5511 0.75 12.3603 0.829018 12.2197 0.96967C12.079 1.11032 12 1.30109 12 1.5C12 1.69891 12.079 1.88968 12.2197 2.03033C12.3603 2.17098 12.5511 2.25 12.75 2.25H15.75V5.25C15.75 5.44891 15.829 5.63968 15.9697 5.78033C16.1103 5.92098 16.3011 6 16.5 6C16.6989 6 16.8897 5.92098 17.0303 5.78033C17.171 5.63968 17.25 5.44891 17.25 5.25V1.5C17.25 1.30109 17.171 1.11032 17.0303 0.969672C16.8897 0.82902 16.6989 0.750002 16.5 0.75Z" />
+                                <path
+                                    d="M5.25 15.75H2.25V12.75C2.25 12.5511 2.17098 12.3603 2.03033 12.2197C1.88968 12.079 1.69891 12 1.5 12C1.30109 12 1.11032 12.079 0.96967 12.2197C0.829018 12.3603 0.75 12.5511 0.75 12.75V16.5C0.75001 16.6989 0.829031 16.8897 0.969681 17.0303C1.11033 17.171 1.30109 17.25 1.5 17.25H5.25C5.44891 17.25 5.63968 17.171 5.78033 17.0303C5.92098 16.8897 6 16.6989 6 16.5C6 16.3011 5.92098 16.1103 5.78033 15.9697C5.63968 15.829 5.44891 15.75 5.25 15.75Z" />
+                                <path
+                                    d="M16.5 12C16.3011 12 16.1103 12.079 15.9697 12.2197C15.829 12.3603 15.75 12.5511 15.75 12.75V15.75H12.75C12.5511 15.75 12.3603 15.829 12.2197 15.9697C12.079 16.1103 12 16.3011 12 16.5C12 16.6989 12.079 16.8897 12.2197 17.0303C12.3603 17.171 12.5511 17.25 12.75 17.25H16.5C16.6989 17.25 16.8897 17.171 17.0303 17.0303C17.171 16.8897 17.25 16.6989 17.25 16.5V12.75C17.25 12.5511 17.171 12.3603 17.0303 12.2197C16.8897 12.079 16.6989 12 16.5 12Z" />
+                                <path
+                                    d="M5.25 0.75H1.5C1.30109 0.750002 1.11032 0.82902 0.969672 0.969672C0.82902 1.11032 0.750002 1.30109 0.75 1.5V5.25C0.75 5.44891 0.829018 5.63968 0.96967 5.78033C1.11032 5.92098 1.30109 6 1.5 6C1.69891 6 1.88968 5.92098 2.03033 5.78033C2.17098 5.63968 2.25 5.44891 2.25 5.25V2.25H5.25C5.44891 2.25 5.63968 2.17098 5.78033 2.03033C5.92098 1.88968 6 1.69891 6 1.5C6 1.30109 5.92098 1.11032 5.78033 0.96967C5.63968 0.829018 5.44891 0.75 5.25 0.75Z" />
+                            </svg>
+                        </div>
+
+                        <div class="video-catalog-btns">
+                            <a href="#" class="btn btn-white btn-catalog-load">
+
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.3498 4.14218L7.85406 0.646423C7.84906 0.641419 7.84363 0.637024 7.83844 0.632263C7.8317 0.626068 7.82513 0.619659 7.81805 0.613831C7.81335 0.609986 7.80832 0.606628 7.8035 0.602936C7.79532 0.59668 7.78723 0.590332 7.77868 0.584564C7.77481 0.58197 7.77069 0.579804 7.76678 0.577331C7.75686 0.571076 7.74695 0.56485 7.73657 0.559265C7.73376 0.55777 7.73083 0.55661 7.72803 0.555176C7.71631 0.549133 7.70446 0.543335 7.69223 0.538238C7.69034 0.537444 7.68832 0.536863 7.6864 0.536102C7.67325 0.530822 7.65991 0.525878 7.64624 0.521727C7.64425 0.521116 7.64221 0.52075 7.64023 0.52017C7.62668 0.516232 7.61298 0.512602 7.59894 0.509795C7.59448 0.50891 7.58987 0.508513 7.58539 0.50775C7.57379 0.505736 7.56225 0.503691 7.55044 0.502532C7.53384 0.500846 7.51717 0.500001 7.50049 0.5H1.5C1.23488 0.500303 0.980699 0.605757 0.793228 0.793228C0.605757 0.980699 0.500303 1.23488 0.5 1.5V12.5C0.500303 12.7651 0.605757 13.0193 0.793228 13.2068C0.980699 13.3942 1.23488 13.4997 1.5 13.5H10.5005C10.7656 13.4997 11.0198 13.3942 11.2073 13.2068C11.3947 13.0193 11.5002 12.7651 11.5005 12.5V4.50967C11.5006 4.50641 11.501 4.50327 11.501 4.5C11.501 4.43327 11.4877 4.36722 11.4617 4.30575C11.4357 4.24429 11.3977 4.18866 11.3498 4.14218ZM8.10403 9.10358L6.35403 10.8536C6.3526 10.855 6.35098 10.8562 6.34955 10.8576C6.33924 10.8677 6.32864 10.8775 6.3175 10.8866C6.3114 10.8916 6.30493 10.896 6.29865 10.9007C6.29187 10.9058 6.28522 10.911 6.27817 10.9157C6.2709 10.9206 6.26334 10.9248 6.25586 10.9293C6.24933 10.9332 6.24295 10.9373 6.23621 10.9409C6.2287 10.9449 6.22095 10.9483 6.21329 10.9519C6.20615 10.9553 6.19913 10.9589 6.19183 10.9619C6.18445 10.965 6.17688 10.9674 6.16937 10.9701C6.1615 10.973 6.15369 10.976 6.14563 10.9784C6.13815 10.9807 6.13055 10.9823 6.12299 10.9843C6.11475 10.9863 6.10657 10.9886 6.09817 10.9903C6.08945 10.992 6.08066 10.9931 6.0719 10.9943C6.06451 10.9954 6.05728 10.9968 6.04984 10.9975C6.03342 10.9991 6.01697 11 6.00049 11C5.98401 11 5.96756 10.9991 5.95114 10.9975C5.9437 10.9968 5.93646 10.9954 5.92908 10.9943C5.92032 10.9931 5.91153 10.992 5.9028 10.9903C5.89441 10.9886 5.88623 10.9863 5.87799 10.9842C5.87042 10.9823 5.86282 10.9807 5.85535 10.9784C5.84729 10.976 5.83948 10.973 5.8316 10.9701C5.8241 10.9674 5.81653 10.965 5.80914 10.9619C5.80185 10.9589 5.79483 10.9553 5.78769 10.9519C5.78003 10.9483 5.77228 10.9449 5.76477 10.9409C5.75803 10.9373 5.75165 10.9332 5.74512 10.9293C5.73764 10.9248 5.73007 10.9206 5.72281 10.9157C5.71576 10.911 5.70911 10.9058 5.70233 10.9007C5.69605 10.896 5.68957 10.8916 5.68347 10.8866C5.67255 10.8776 5.66214 10.868 5.65201 10.8582C5.65036 10.8566 5.64856 10.8552 5.64694 10.8536L3.89694 9.10358C3.80317 9.00981 3.75049 8.88263 3.75049 8.75002C3.75048 8.61742 3.80316 8.49024 3.89693 8.39647C3.99069 8.3027 4.11787 8.25002 4.25048 8.25001C4.38309 8.25001 4.51026 8.30268 4.60403 8.39645L5.50049 9.29291V6.5C5.50049 6.36739 5.55317 6.24021 5.64693 6.14645C5.7407 6.05268 5.86788 6 6.00049 6C6.1331 6 6.26027 6.05268 6.35404 6.14645C6.44781 6.24021 6.50049 6.36739 6.50049 6.5V9.29291L7.39694 8.39645C7.44337 8.35003 7.49849 8.3132 7.55916 8.28807C7.61982 8.26294 7.68484 8.25001 7.7505 8.25002C7.81616 8.25002 7.88118 8.26295 7.94184 8.28808C8.0025 8.31321 8.05762 8.35004 8.10405 8.39647C8.15048 8.4429 8.18731 8.49802 8.21243 8.55868C8.23756 8.61935 8.25049 8.68437 8.25049 8.75003C8.25049 8.81569 8.23755 8.88071 8.21243 8.94137C8.1873 9.00203 8.15047 9.05715 8.10403 9.10358V9.10358ZM7.50049 4.5V1.70709L10.2933 4.5H7.50049Z" />
+                                </svg>
+
+
+                                Скачать каталог</a>
+
+                            <div class="video__btn video__btn--share">
+                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 10H1.5V2.5C1.5 2.36739 1.44732 2.24021 1.35355 2.14645C1.25979 2.05268 1.13261 2 1 2C0.867392 2 0.740215 2.05268 0.646447 2.14645C0.552678 2.24021 0.5 2.36739 0.5 2.5V10C0.500303 10.2651 0.605757 10.5193 0.793228 10.7068C0.980699 10.8942 1.23488 10.9997 1.5 11H11C11.1326 11 11.2598 10.9473 11.3536 10.8536C11.4473 10.7598 11.5 10.6326 11.5 10.5C11.5 10.3674 11.4473 10.2402 11.3536 10.1464C11.2598 10.0527 11.1326 10 11 10Z"
+                                        fill="black" />
+                                    <path
+                                        d="M13.386 3.81721C13.3917 3.81028 13.3967 3.80301 13.402 3.79584C13.4064 3.78989 13.411 3.78409 13.4151 3.77793C13.4205 3.77003 13.4251 3.76182 13.4299 3.75367C13.4334 3.74778 13.4371 3.74204 13.4403 3.73597C13.4447 3.72791 13.4484 3.71961 13.4522 3.71137C13.4553 3.70478 13.4586 3.69831 13.4614 3.6916C13.4647 3.68366 13.4673 3.6756 13.4702 3.66755C13.4728 3.66016 13.4757 3.6529 13.4779 3.64536C13.4804 3.6373 13.4822 3.62913 13.4842 3.62098C13.4861 3.61329 13.4883 3.60572 13.4898 3.59791C13.4917 3.58841 13.4929 3.57886 13.4942 3.56931C13.4951 3.56269 13.4964 3.55622 13.4971 3.5495C13.5003 3.51659 13.5003 3.48342 13.4971 3.4505C13.4964 3.44379 13.4951 3.43732 13.4942 3.4307C13.4929 3.42115 13.4917 3.41159 13.4898 3.4021C13.4883 3.39429 13.4861 3.38672 13.4842 3.37903C13.4822 3.37088 13.4804 3.3627 13.4779 3.35465C13.4757 3.34711 13.4728 3.33985 13.4702 3.33246C13.4673 3.3244 13.4647 3.31635 13.4614 3.30841C13.4586 3.3017 13.4553 3.29523 13.4522 3.28864C13.4484 3.2804 13.4447 3.2721 13.4403 3.26404C13.4371 3.25797 13.4334 3.25223 13.4299 3.24634C13.4251 3.23819 13.4205 3.22998 13.4151 3.22208C13.411 3.21591 13.4064 3.21012 13.402 3.20417C13.3967 3.19699 13.3917 3.18973 13.386 3.1828C13.3788 3.17398 13.3709 3.16571 13.3631 3.15741C13.3597 3.15378 13.3567 3.14997 13.3531 3.14643L10.3531 0.146426C10.2594 0.0526513 10.1322 -3.05176e-05 9.99956 -3.05176e-05C9.86694 -3.05176e-05 9.73976 0.0526513 9.64598 0.146426C9.55221 0.2402 9.49953 0.367386 9.49953 0.500003C9.49953 0.63262 9.55221 0.759805 9.64598 0.85358L11.7925 3.00001H9.49956C8.05806 2.99905 6.65718 3.47756 5.5175 4.3602C4.37782 5.24284 3.56408 6.47947 3.20439 7.87537C3.18795 7.93898 3.1842 8.00521 3.19337 8.07027C3.20253 8.13533 3.22443 8.19795 3.25781 8.25454C3.29119 8.31113 3.3354 8.36059 3.38791 8.40008C3.44041 8.43958 3.50019 8.46834 3.56382 8.48471C3.62745 8.50109 3.69368 8.50477 3.75873 8.49553C3.82378 8.4863 3.88637 8.46433 3.94293 8.43089C3.99948 8.39745 4.04889 8.35319 4.08833 8.30064C4.12777 8.24809 4.15647 8.18829 4.17278 8.12464C4.47722 6.94358 5.16584 5.89732 6.1302 5.1506C7.09456 4.40388 8.27989 3.9991 9.49956 4.00001H11.7925L9.64598 6.14643C9.55221 6.2402 9.49953 6.36739 9.49953 6.50001C9.49953 6.63262 9.55221 6.75981 9.64598 6.85358C9.73976 6.94736 9.86694 7.00004 9.99956 7.00004C10.1322 7.00004 10.2594 6.94736 10.3531 6.85358L13.3531 3.85358C13.3567 3.85004 13.3597 3.84623 13.3631 3.8426C13.3709 3.8343 13.3788 3.82603 13.386 3.81721Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__inner">
+                        <div class="catalog__leftSide">
+                            <h2 class="caption">Тут будет фильтр</h2>
+                        </div>
+                        <div class="catalog__rightSide">
+                            <div class="catalog__controls">
+                                <button class="mobile-filter">Фильтр</button>
+                                <div class="catalog-settings">
+                                    <div class="select-wrapper select-product-sort">
+                                        <select name="" id="">
+                                            <option value="">По новизне</option>
+                                            <option value="">По цене</option>
+                                            <option value="">По популярности</option>
+                                        </select>
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
+
+                                    <div class="select-wrapper select-product-count">
+                                        <select name="" id="">
+                                            <option value="">60 товаров</option>
+                                            <option value="">60 товаров</option>
+                                            <option value="">60 товаров</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                        <div class="product-info__content">
+                            <div class="catalog-list">
+                                <div class="product-card product-cart--sale">
+                                    <picture class='product-card__picture'>
+                                        <span class="percent-sale"> -30% </span>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item1.webp">
+                                        <img src="../../img/product-item1.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--stock">в
+                                            наличии</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span class="price-current">891 712₽</span>
+                                            <span class="price-old">1 273 875₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <ul class="product-info__controls">
-                                <li>
-                                    <a href="#" class="link-block">
-                                        <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <picture class='product-card__picture'>
+                                        <a href="#"></a>
+                                        <source type="image/webp" srcset="../../img/product-item2.webp">
+                                        <img src="../../img/product-item2.jpg" alt="">
+                                    </picture>
+                                    <div class="product-card__content">
+                                        <span class="product-card__availability product-card__availability--order">под
+                                            заказ</span>
+                                        <a href="#" class="product-card__brand">Bellavista</a>
+                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
+                                            ashwood / fabric</a>
+                                        <div class="product-card__price">
+                                            <span>по запросу</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-pagination">
+                                <button class="btn btn-black">загрузить еще</button>
+                                <div class="pagination">
+                                    <a href="#" class="pagination-prev">
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M11 10H1.5V2.5C1.5 2.36739 1.44732 2.24021 1.35355 2.14645C1.25979 2.05268 1.13261 2 1 2C0.867392 2 0.740215 2.05268 0.646447 2.14645C0.552678 2.24021 0.5 2.36739 0.5 2.5V10C0.500303 10.2651 0.605757 10.5193 0.793228 10.7068C0.980699 10.8942 1.23488 10.9997 1.5 11H11C11.1326 11 11.2598 10.9473 11.3536 10.8536C11.4473 10.7598 11.5 10.6326 11.5 10.5C11.5 10.3674 11.4473 10.2402 11.3536 10.1464C11.2598 10.0527 11.1326 10 11 10Z" />
-                                            <path
-                                                d="M13.3865 3.81721C13.3922 3.81028 13.3972 3.80301 13.4025 3.79584C13.4069 3.78989 13.4115 3.78409 13.4156 3.77793C13.4209 3.77003 13.4256 3.76182 13.4304 3.75367C13.4339 3.74778 13.4376 3.74204 13.4408 3.73597C13.4451 3.72791 13.4488 3.71961 13.4527 3.71137C13.4558 3.70478 13.4591 3.69831 13.4619 3.6916C13.4651 3.68366 13.4678 3.6756 13.4707 3.66755C13.4733 3.66016 13.4761 3.6529 13.4784 3.64536C13.4809 3.6373 13.4827 3.62913 13.4847 3.62098C13.4866 3.61329 13.4888 3.60572 13.4903 3.59791C13.4922 3.58841 13.4934 3.57886 13.4947 3.56931C13.4956 3.56269 13.4969 3.55622 13.4975 3.5495C13.5008 3.51659 13.5008 3.48342 13.4975 3.4505C13.4969 3.44379 13.4956 3.43732 13.4947 3.4307C13.4934 3.42115 13.4922 3.41159 13.4903 3.4021C13.4888 3.39429 13.4866 3.38672 13.4847 3.37903C13.4827 3.37088 13.4809 3.3627 13.4784 3.35465C13.4761 3.34711 13.4733 3.33985 13.4707 3.33246C13.4678 3.3244 13.4651 3.31635 13.4619 3.30841C13.4591 3.3017 13.4558 3.29523 13.4527 3.28864C13.4488 3.2804 13.4451 3.2721 13.4408 3.26404C13.4376 3.25797 13.4339 3.25223 13.4304 3.24634C13.4256 3.23819 13.4209 3.22998 13.4156 3.22208C13.4115 3.21591 13.4069 3.21012 13.4025 3.20417C13.3972 3.19699 13.3922 3.18973 13.3865 3.1828C13.3792 3.17398 13.3714 3.16571 13.3635 3.15741C13.3601 3.15378 13.3571 3.14997 13.3536 3.14643L10.3536 0.146426C10.2599 0.0526513 10.1327 -3.05176e-05 10 -3.05176e-05C9.86743 -3.05176e-05 9.74025 0.0526513 9.64647 0.146426C9.5527 0.2402 9.50001 0.367386 9.50001 0.500003C9.50001 0.63262 9.5527 0.759805 9.64647 0.85358L11.7929 3.00001H9.50005C8.05855 2.99905 6.65767 3.47756 5.51799 4.3602C4.37831 5.24284 3.56457 6.47947 3.20488 7.87537C3.18844 7.93898 3.18469 8.00521 3.19385 8.07027C3.20302 8.13533 3.22492 8.19795 3.2583 8.25454C3.29168 8.31113 3.33589 8.36059 3.3884 8.40008C3.4409 8.43958 3.50068 8.46834 3.56431 8.48471C3.62793 8.50109 3.69417 8.50477 3.75922 8.49553C3.82427 8.4863 3.88686 8.46433 3.94342 8.43089C3.99997 8.39745 4.04938 8.35319 4.08882 8.30064C4.12826 8.24809 4.15695 8.18829 4.17326 8.12464C4.47771 6.94358 5.16633 5.89732 6.13069 5.1506C7.09505 4.40388 8.28038 3.9991 9.50005 4.00001H11.7929L9.64647 6.14643C9.5527 6.2402 9.50001 6.36739 9.50001 6.50001C9.50001 6.63262 9.5527 6.75981 9.64647 6.85358C9.74025 6.94736 9.86743 7.00004 10 7.00004C10.1327 7.00004 10.2599 6.94736 10.3536 6.85358L13.3536 3.85358C13.3571 3.85004 13.3601 3.84623 13.3635 3.8426C13.3714 3.8343 13.3792 3.82603 13.3865 3.81721Z" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.03033 0.96967C9.32322 1.26256 9.32322 1.73744 9.03033 2.03033L2.06066 9L9.03033 15.9697C9.32322 16.2626 9.32322 16.7374 9.03033 17.0303C8.73744 17.3232 8.26256 17.3232 7.96967 17.0303L0.46967 9.53033C0.176777 9.23744 0.176777 8.76256 0.46967 8.46967L7.96967 0.96967C8.26256 0.676777 8.73744 0.676777 9.03033 0.96967Z" />
                                         </svg>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="link-block">
-                                        <svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                                    <span class="pagination__pages"><span class="page-current">1</span>/<span
+                                            class="page-all">25</span></span>
+                                    <a href="#" class="pagination-next">
+                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.1662 2.5H11.4995V0.5C11.4995 0.367392 11.4468 0.240216 11.3531 0.146448C11.2593 0.0526802 11.1321 1.32606e-06 10.9995 0H2.99951C2.8669 1.32606e-06 2.73973 0.0526802 2.64596 0.146448C2.55219 0.240216 2.49951 0.367392 2.49951 0.5V2.5H1.83286C0.959809 2.5 0.249512 3.17291 0.249512 4V9C0.249513 9.13261 0.302192 9.25978 0.39596 9.35355C0.489728 9.44732 0.616904 9.5 0.749512 9.5H2.49951V11.75C2.49951 11.8826 2.55219 12.0098 2.64596 12.1036C2.73973 12.1973 2.8669 12.25 2.99951 12.25H10.9995C11.1321 12.25 11.2593 12.1973 11.3531 12.1036C11.4468 12.0098 11.4995 11.8826 11.4995 11.75V9.5H13.2495C13.3821 9.5 13.5093 9.44732 13.6031 9.35355C13.6968 9.25978 13.7495 9.13261 13.7495 9V4C13.7495 3.17291 13.0392 2.5 12.1662 2.5ZM3.49951 1H10.4995V2.5H3.49951V1ZM10.4995 11.25H3.49951V8H10.4995V11.25ZM10.7495 6C10.6012 6 10.4562 5.95601 10.3328 5.8736C10.2095 5.79119 10.1134 5.67406 10.0566 5.53701C9.99984 5.39997 9.98498 5.24917 10.0139 5.10368C10.0429 4.9582 10.1143 4.82456 10.2192 4.71967C10.3241 4.61478 10.4577 4.54335 10.6032 4.51441C10.7487 4.48547 10.8995 4.50032 11.0365 4.55709C11.1736 4.61386 11.2907 4.70999 11.3731 4.83332C11.4555 4.95666 11.4995 5.10166 11.4995 5.25C11.4995 5.34849 11.4801 5.44602 11.4424 5.53701C11.4047 5.62801 11.3495 5.71069 11.2798 5.78033C11.2102 5.84997 11.1275 5.90522 11.0365 5.94291C10.9455 5.9806 10.848 6 10.7495 6Z" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.96967 0.96967C1.26256 0.676777 1.73744 0.676777 2.03033 0.96967L9.53033 8.46967C9.82322 8.76256 9.82322 9.23744 9.53033 9.53033L2.03033 17.0303C1.73744 17.3232 1.26256 17.3232 0.96967 17.0303C0.676777 16.7374 0.676777 16.2626 0.96967 15.9697L7.93934 9L0.96967 2.03033C0.676777 1.73744 0.676777 1.26256 0.96967 0.96967Z" />
                                         </svg>
                                     </a>
-                                </li>
-                            </ul>
-
-                            <h2 class="product-info__name">Диван Minotti Alexander & Alexander "Drop" ALELET185S G +
-                                ALDMCL165D G - ткань - cat.G art.Kita</h2>
-
-                            <div class="product-info__availability">
-                                <span class="product-card__availability product-card__availability--stock">
-                                    в наличии <span class="count">- 1 шт</span>
-                                </span>
-                                <span class="product-info__text">Товар на экспозиции</span>
+                                </div>
                             </div>
-
-                            <div class="product-info__price">
-                                <span class="current">2 991 712₽</span>
-                                <span class="old">4 273 875₽</span>
-                            </div>
-
-                            <button class="btn btn-black product-info__btn">купить</button>
-
-                            <div class="product-info__details">
-                                <ul>
+                            <div class="catalog-collections">
+                                <h2 class="caption">подборки</h2>
+                                <ul class="collections-list">
                                     <li>
-                                        <h3>отделка</h3>
-                                        <p>ткань-cat.G art.Kita melange col.Grafite 02</p>
+                                        <a href="#">#диваны</a>
                                     </li>
                                     <li>
-                                        <h3>Бренд</h3>
-                                        <a href="#">Minotti</a>
+                                        <a href="#">#кресла</a>
                                     </li>
                                     <li>
-                                        <h3>Модель</h3>
-                                        <a href="#">Alexander & Alexander "Drop"</a>
+                                        <a href="#">#пуфы</a>
                                     </li>
                                     <li>
-                                        <h3>Размер</h3>
-                                        <p>354*144/105*79</p>
+                                        <a href="#">#стулья</a>
                                     </li>
                                     <li>
-                                        <h3>Дизайнер</h3>
-                                        <a href="#">Rodolfo Dordoni</a>
+                                        <a href="#">#банкетки</a>
                                     </li>
                                     <li>
-                                        <h3>материал</h3>
-                                        <p>Ткань</p>
+                                        <a href="#">#банкетки</a>
                                     </li>
                                     <li>
-                                        <h3>Цвет</h3>
-                                        <p>Серый</p>
+                                        <a href="#">#банкетки</a>
                                     </li>
                                     <li>
-                                        <h3>Артикул</h3>
-                                        <p>ALELET185S G +</p>
-                                        <p>ALDMCL165D G</p>
+                                        <a href="#">#комоды</a>
                                     </li>
                                     <li>
-                                        <h3>код</h3>
-                                        <p>333798</p>
+                                        <a href="#">#диваны</a>
                                     </li>
                                     <li>
-                                        <h3>о товаре</h3>
-                                        <p>Диван из 2х модулей-левый элемент прямой 187см с низкой спинкой+правый
-                                            элемент закругленный шезлонг 167см с высокой спинкой</p>
+                                        <a href="#">#кресла</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">#пуфы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">#стулья</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">#банкетки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">#банкетки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">#банкетки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">#комоды</a>
                                     </li>
                                 </ul>
                             </div>
@@ -318,471 +832,52 @@
                 </div>
             </section>
 
-            <section class="about-brand">
+            <section class="category-text">
                 <div class="container">
-                    <div class="about-brand__list">
-                        <div class="about-brand__item">
-                            <picture class="about-brand__picture">
-                                <source type="image/webp" srcset="../../img/pic-brand1.webp" />
-                                <img src="../../img/pic-brand1.png" alt="">
-                            </picture>
-                            <div class="about-brand__content">
-                                <p>Minotti – всемирно известная фабрика по изготовлению эксклюзивной мебели...</p>
-                                <a href="#" class="btn btn-black about-brand__btn">Все товары Minotti</a>
-                            </div>
+                    <picture class='picture'>
+                        <source type="image/webp" srcset="../../img/pic-category.webp">
+                        <img src="../../img/pic-category.jpg" alt="">
+                    </picture>
+
+                    <div class="category-text__line">
+                        <h2 class="caption">Сочетание классики и функциональных новаторств</h2>
+                        <div class="category-text__text">
+                            <p>Minotti – всемирно известная фабрика по изготовлению эксклюзивной мебели - в 2018 году
+                                отметила 70-летний юбилей. За эти годы небольшая мастерская, которая была основана
+                                Альберто Минотти в послевоенные годы в Италии, благодаря непрерывным инновациям,
+                                превратилась в развитую компанию как по масштабу, так и по творческим стремлениям.</p>
+
+                            <p>Ее изделиями восхищаются клиенты и вдохновляются другие производители.</p>
+
+                            <p>Уникальность бренда заключается в том, что все модели образуют единый ансамбль, благодаря
+                                чему мебелью можно обставить весь дом, и это будет смотреться стильно, изысканно и,
+                                главное, гармонично.</p>
                         </div>
-                        <div class="about-brand__item">
-                            <picture class="about-brand__picture">
-                                <source type="image/webp" srcset="../../img/pic-brand2.webp" />
-                                <img src="../../img/pic-brand2.png" alt="">
-                            </picture>
-                            <div class="about-brand__content">
-                                <p>Родольфо Дордони проектирует так, что предмет становится современным, итальянским и
-                                    дорогим....</p>
-                                <a href="#" class="btn btn-black about-brand__btn">Все товары Minotti</a>
-                            </div>
+                    </div>
+
+                    <div class="category-text__line">
+                        <h2 class="caption">Сочетание классики и функциональных новаторств</h2>
+                        <div class="category-text__text">
+                            <p>При создании предметов интерьера дизайнеры руководствовались следующими принципами:
+                                изысканная простота, но если всмотреться, можно увидеть оригинальные и часто
+                                инновационные решения; лаконичные формы с закругленными плавными обводами, где особое
+                                внимание уделяется соотношению линий, объемов и фактур материалов изготовления;
+                                необычные детали, которые заметят настоящие ценители прекрасного; гармоничный баланс
+                                между классикой и современностью.</p>
+
+                            <p>Minotti не против новаторств, но остается неизменно верной традициям и своему
+                                эксклюзивному стилю, что находит воплощение в каждой коллекции;</p>
+
+                            <p>Богатый выбор тканей: от льна до синеля, от хлопка до бархата, от мохера до кашемира или
+                                кожи высокого качества.</p>
+
+                            <p>Мастера уделяют пристальное внимание деталям: швам, цвету и качеству материалов, что
+                                делает мебель не только роскошной и удобной в использовании, но и долговечной. Именно
+                                поэтому она так полюбилась клиентам всего мира.</p>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section class="products-section">
-                <div class="container">
-                    <h2 class="caption">диван minotti alexander в другой отделке</h2>
-                    <div class="products__slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="product-card product-cart--sale">
-                                    <picture class='product-card__picture'>
-                                        <span class="percent-sale"> -30% </span>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item1.webp">
-                                        <img src="../../img/product-item1.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item2.webp">
-                                        <img src="../../img/product-item2.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--order">под
-                                            заказ</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span>по запросу</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item3.webp">
-                                        <img src="../../img/product-item3.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span>1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item4.webp">
-                                        <img src="../../img/product-item4.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item1.webp">
-                                        <img src="../../img/product-item1.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item2.webp">
-                                        <img src="../../img/product-item2.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--order">под
-                                            заказ</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span>по запросу</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item3.webp">
-                                        <img src="../../img/product-item3.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span>1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item4.webp">
-                                        <img src="../../img/product-item4.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="products-section">
-                <div class="container">
-                    <h2 class="caption">рекомендуемые товары</h2>
-                    <div class="products__slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="product-card product-cart--sale">
-                                    <picture class='product-card__picture'>
-                                        <span class="percent-sale"> -30% </span>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item1.webp">
-                                        <img src="../../img/product-item1.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item2.webp">
-                                        <img src="../../img/product-item2.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--order">под
-                                            заказ</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span>по запросу</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item3.webp">
-                                        <img src="../../img/product-item3.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span>1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item4.webp">
-                                        <img src="../../img/product-item4.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item1.webp">
-                                        <img src="../../img/product-item1.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item2.webp">
-                                        <img src="../../img/product-item2.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--order">под
-                                            заказ</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span>по запросу</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item3.webp">
-                                        <img src="../../img/product-item3.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span>1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item4.webp">
-                                        <img src="../../img/product-item4.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="products-section">
-                <div class="container">
-                    <h2 class="caption">недавно просмотренные</h2>
-                    <div class="products__slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="product-card product-cart--sale">
-                                    <picture class='product-card__picture'>
-                                        <span class="percent-sale"> -30% </span>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item1.webp">
-                                        <img src="../../img/product-item1.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <picture class='product-card__picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item2.webp">
-                                        <img src="../../img/product-item2.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--order">под
-                                            заказ</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span>по запросу</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="collections-section">
-                <div class="container">
-                    <h2 class="caption">в подборках</h2>
-                    <ul class="collections-list">
-                        <li>
-                            <a href="#">#диваны</a>
-                        </li>
-                        <li>
-                            <a href="#">#кресла</a>
-                        </li>
-                        <li>
-                            <a href="#">#пуфы</a>
-                        </li>
-                        <li>
-                            <a href="#">#стулья</a>
-                        </li>
-                        <li>
-                            <a href="#">#банкетки</a>
-                        </li>
-                        <li>
-                            <a href="#">#банкетки</a>
-                        </li>
-                        <li>
-                            <a href="#">#банкетки</a>
-                        </li>
-                        <li>
-                            <a href="#">#комоды</a>
-                        </li>
-                        <li>
-                            <a href="#">#столы</a>
-                        </li>
-                        <li>
-                            <a href="#">#столы</a>
-                        </li>
-                        <li>
-                            <a href="#">#столы</a>
-                        </li>
-                        <li>
-                            <a href="#">#тумбы</a>
-                        </li>
-                        <li>
-                            <a href="#">#кровати</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
         </main>
 
         <footer class="footer">
@@ -916,7 +1011,7 @@
     <script src="../../libs/fancybox/fancybox.umd.js"></script>
     <script src="../../libs/inputmask/jquery.inputmask.min.js"></script>
     <script src="../../js/main.js"></script>
-    <script src="product.js"></script>
+    <script src="category.js"></script>
 </body>
 
 </html>

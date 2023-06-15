@@ -76,6 +76,16 @@ $(document).ready(function () {
     sliders.length && sliderinit();
   }
 
+  if ($("select").length > 0) {
+    $("select").map(function () {
+      $(this).selectric({
+        onOpen: function (element) {},
+        onChange: function (element) {},
+        onClose: function (element) {},
+      });
+    });
+  }
+
   // ---------------------------------------
 
   // if ($(".phoneInput").length > 0) {
@@ -108,16 +118,6 @@ $(document).ready(function () {
 
   //   $("[data-modal]").map(function () {
   //     $(this).click((e) => e.preventDefault());
-  //   });
-  // }
-
-  // if ($("select").length > 0) {
-  //   $("select").map(function () {
-  //     $(this).selectric({
-  //       onOpen: function (element) {},
-  //       onChange: function (element) {},
-  //       onClose: function (element) {},
-  //     });
   //   });
   // }
 

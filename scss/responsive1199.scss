@@ -14,12 +14,15 @@
   .caption {
     font-size: 32px;
     line-height: 32px;
-    max-width: 500px;
   }
 
   .category-section {
     .container {
       padding: 0 32px;
+    }
+
+    .caption {
+      max-width: 500px;
     }
   }
 
@@ -52,5 +55,31 @@
   .about-brand__content {
     width: 100%;
     margin-top: 37px;
+  }
+
+  .catalog-list .product-card {
+    width: calc(50% - 12px);
+  }
+
+  .collections-section,
+  .catalog-collections {
+    .caption {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+
+  .category-text__line .caption {
+    line-height: 40px;
+  }
+
+  .category-text__text {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .category-text__line {
+    padding: 30px 0;
   }
 }
