@@ -1203,6 +1203,7 @@ a.caption:hover {
   -webkit-transform: translateY(25px);
   -o-transform: translateY(25px);
   transform: translateY(25px);
+  z-index: 3;
 }
 .grettings .icon {
   max-width: auto;
@@ -1234,6 +1235,7 @@ a.caption:hover {
 }
 .grettings__item .btn {
   margin-top: auto;
+  z-index: 3;
 }
 .grettings .picture {
   position: absolute;
@@ -1241,7 +1243,6 @@ a.caption:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 .grettings .picture img {
   width: 100%;
