@@ -137,6 +137,12 @@ $(document).ready(function () {
   // }
 });
 
+$(document).on("fullscreenchange", function (event) {
+  document.fullscreenElement
+    ? event.target.setAttribute("controls", true)
+    : event.target.removeAttribute("controls");
+});
+
 $(window).on("resize", function () {
   if ($(".js-mobile-open").length > 0) {
     if ($(window).width() >= 1024) {
