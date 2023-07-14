@@ -2,3 +2,8 @@ $colorWhite: rgba(255, 255, 255, 1);
 $colorBlack: rgba(0, 0, 0, 1);
 
 $fontMain: "IBM Plex Mono", monospace;
+
+$shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08),
+  0px 5px 12px 0px rgba(0, 0, 0, 0.08), 0px 22px 22px 0px rgba(0, 0, 0, 0.07),
+  0px 49px 29px 0px rgba(0, 0, 0, 0.04), 0px 87px 35px 0px rgba(0, 0, 0, 0.01),
+  0px 135px 38px 0px rgba(0, 0, 0, 0);
