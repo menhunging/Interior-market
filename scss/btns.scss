@@ -3,9 +3,9 @@
   @include border-radius(0);
   position: relative;
   @include transition(all 0.3s);
-  @include border-radius(30px);
+  @include border-radius(16px);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
   color: $colorBlack;
   text-align: center;
@@ -27,7 +27,7 @@
     background-color: $colorBlack;
     border-color: $colorBlack;
     color: $colorWhite;
-    text-transform: uppercase;
+    @include border-radius(24px);
 
     &:hover {
     }

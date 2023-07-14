@@ -20,6 +20,54 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".slider-main").length > 0) {
+    let swiper = new Swiper(".slider-main", {
+      slidesPerView: 4,
+      spaceBetween: 32,
+
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+        formatFractionCurrent: function (number) {
+          return number;
+        },
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 16,
+        },
+        744: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        850: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          spaceBetween: 32,
+          grid: {
+            rows: 2,
+            fill: "row",
+          },
+        },
+        1441: {
+          slidesPerView: 4.68,
+          spaceBetween: 32,
+          grid: {
+            rows: 1,
+            fill: "row",
+          },
+        },
+      },
+    });
+  }
+
   if ($(".slider-caterogy").length > 0) {
     const sliders = document.querySelectorAll(".slider-caterogy");
     let mySwipers = [];
@@ -29,7 +77,7 @@ $(document).ready(function () {
         if (!slider.swiper) {
           mySwipers[index] = new Swiper(slider, {
             slidesPerView: 4,
-            slidesPerGroup: 4,
+            slidesPerGroup: 1,
             spaceBetween: 32,
             pagination: {
               el: ".swiper-pagination",
@@ -48,13 +96,20 @@ $(document).ready(function () {
                 slidesPerGroup: 2,
                 spaceBetween: 16,
               },
-              767: {
+              744: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+              },
+              850: {
                 slidesPerView: 3,
                 slidesPerGroup: 3,
               },
               1200: {
                 slidesPerView: 4,
                 slidesPerGroup: 4,
+              },
+              1441: {
+                slidesPerView: 4.68,
               },
             },
           });

@@ -50,6 +50,10 @@ input {
     width: 100%;
     display: block;
   }
+
+  img {
+    width: 100%;
+  }
 }
 
 .main {
@@ -87,16 +91,20 @@ input {
 
   %stylesInput {
     border: 0;
-    border-bottom: 1px solid $colorBlack;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: $colorBlack;
     background: transparent;
     width: 100%;
+    height: 48px;
+    border: 1px solid $colorBlack;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $colorBlack;
+    @include border-radius(16px);
+    padding: 0 24px;
 
     &::placeholder {
       opacity: 1;
+      text-transform: none;
     }
   }
 
@@ -114,7 +122,10 @@ input {
 
   input {
     @extend %stylesInput;
-    padding: 14px 0;
+
+    & + input {
+      margin-top: 24px;
+    }
   }
 
   .icon {
@@ -125,6 +136,30 @@ input {
     svg {
       color: $colorBlack;
       fill: $colorBlack;
+    }
+  }
+
+  .icon-check {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    margin-top: -10px;
+  }
+
+  .icon-social {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    margin-top: -6px;
+  }
+
+  & + .input-item {
+    margin-top: 24px;
+  }
+
+  &.input-social {
+    input {
+      padding-left: 39px;
     }
   }
 }
@@ -334,6 +369,7 @@ input {
     text-decoration-line: underline;
     @include transition(all 0.3s);
     color: #4c535b;
+
     &:hover {
       text-decoration-color: transparent;
     }
@@ -461,8 +497,8 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border: solid 1px $colorBlack;
 
   path {
@@ -474,7 +510,7 @@ div {
   font-size: 16px;
   line-height: 14px;
   gap: 10px;
-  padding: 12px 11px;
+  padding: 16px 15px;
   border: solid 1px $colorBlack;
   @include border-radius(16px);
   display: flex;
@@ -500,6 +536,7 @@ div {
     width: 8px;
     height: 8px;
     background-color: #d8d8d8;
+    opacity: 1;
     @include border-radius(8px);
     margin: 0 !important;
   }
@@ -524,7 +561,7 @@ div {
   background-color: $colorWhite;
   border: solid 1px $colorBlack;
   @include border-radius(50%);
-  margin-top: -15px;
+  margin-top: -29px;
 
   &:after {
     color: #424242;
@@ -535,4 +572,44 @@ div {
 
 picture {
   position: relative;
+}
+
+.icon-check {
+  svg {
+    path {
+      fill: #424242;
+    }
+  }
+}
+
+.icon-social {
+  width: 14px;
+  height: 12px;
+}
+
+.swiper-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  position: absolute;
+  right: 0;
+  top: -112px;
+
+  %styleButtonDefault {
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    position: relative;
+    margin: 0;
+    width: 56px;
+    height: 56px;
+  }
+
+  .swiper-button-next {
+    @extend %styleButtonDefault;
+  }
+  .swiper-button-prev {
+    @extend %styleButtonDefault;
+  }
 }
