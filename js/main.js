@@ -104,6 +104,12 @@ $(document).ready(function () {
     initCollection($(".catalog-collections"));
   }
 
+  if ($(".caterogy-title").length) {
+    if ($(window).width() < 1200) {
+      wrapText('mobile');
+    }
+  }
+
   // ---------------------------------------
 
   // if ($(".phoneInput").length > 0) {
@@ -197,7 +203,7 @@ function initAccardeon(block) {
     });
   }
 }
-
+ 
 function destroyAccardeon(block) {
   if ($(block).hasClass("accardeon-initialization")) {
     let content = $(block).find(".js-content");
