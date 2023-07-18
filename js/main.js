@@ -100,6 +100,10 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".catalog-collections").length) {
+    initCollection($(".catalog-collections"));
+  }
+
   // ---------------------------------------
 
   // if ($(".phoneInput").length > 0) {
@@ -165,6 +169,14 @@ $(window).on("resize", function () {
       initAccardeon(".footer");
     }
   }
+
+  if ($(".caterogy-title").length) {
+    if ($(window).width() < 1200 && !$(".caterogy-title").hasClass("wrap-js")) {
+      wrapText("mobile");
+    } else {
+      wrapText("desktop");
+    }
+  }
 });
 
 function initAccardeon(block) {
@@ -207,5 +219,34 @@ function openFullVideo(elem) {
     elem.webkitRequestFullscreen();
   } else if (elem.msRequestFullscreen) {
     elem.msRequestFullscreen();
+  }
+}
+
+function initCollection(block) {
+  let minus = block.find(".catalog-collections__more--minus");
+  let plus = block.find(".catalog-collections__more--plus");
+}
+
+function wrapText(device) {
+  let html = $(".caterogy-title").html();
+  $(".caterogy-title").remove();
+
+  switch (device) {
+    case "mobile":
+      $(".caterogy-title").addClass("wrap-js");
+      $(".catalog__rightSide").prepend(
+        `<div class='caterogy-title'>${html}</div>`
+      );
+      break;
+
+    case "desktop":
+      $(".caterogy-title").removeClass("wrap-js");
+      $(".catalog__leftSide").prepend(
+        `<div class='caterogy-title'>${html}</div>`
+      );
+      break;
+
+    default:
+      break;
   }
 }

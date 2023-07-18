@@ -378,6 +378,8 @@
     margin-top: auto;
     position: relative;
     z-index: 5;
+    padding: 12px 15px;
+    font-size: 14px;
   }
 
   &__text {
@@ -402,6 +404,7 @@
   background: $colorWhite;
   border: 1px solid $colorBlack;
   @include border-radius(56px);
+  @include transition(all 0.3s);
   position: absolute;
   z-index: 5;
   display: flex;
@@ -423,8 +426,21 @@
   }
 
   svg {
+    @include transition(all 0.3s);
+
     path {
+      @include transition(all 0.3s);
       fill: $colorBlack;
+    }
+  }
+
+  &:hover {
+    background-color: $colorBlack;
+
+    svg {
+      path {
+        fill: $colorWhite;
+      }
     }
   }
 }
@@ -1022,7 +1038,10 @@
 .collections-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 25px;
+  height: 48px;
+  overflow: hidden;
+  position: relative;
 
   li {
   }
@@ -1033,9 +1052,58 @@
     font-size: 16px;
     line-height: 16px;
     color: $colorBlack;
-    padding: 16px;
+    padding: 15px;
     border: solid 1px $colorBlack;
     @include border-radius(16px);
+  }
+}
+
+.catalog-collections__more {
+  background-color: $colorBlack;
+  border: solid 1px $colorBlack;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include border-radius(50%);
+  @include transition(background-color 0.3s);
+  color: $colorWhite;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 25px;
+  padding-bottom: 3px;
+
+  &--minus {
+    display: none;
+  }
+
+  &--plus {
+  }
+
+  .symbol {
+    @include transition(all 0.3s);
+  }
+
+  svg {
+    pointer-events: none;
+
+    path {
+      @include transition(all 0.3s);
+      fill: $colorWhite;
+    }
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: $colorBlack;
+
+    svg {
+      path {
+        fill: $colorBlack;
+      }
+    }
   }
 }
 
@@ -1060,6 +1128,10 @@
   &__rightSide {
     width: calc(100% - 320px - 32px);
   }
+
+  & + .category-text {
+    margin-top: 64px;
+  }
 }
 
 .catalog__controls {
@@ -1071,7 +1143,7 @@
   .caption {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: -23px;
+    margin-bottom: -26px;
     text-transform: none;
   }
 }
@@ -1079,22 +1151,27 @@
 .filter-settings {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 22px;
   flex-wrap: wrap;
   width: 100%;
   order: 2;
+  height: 50px;
+  overflow: hidden;
 
   li {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
     color: $colorBlack;
     display: flex;
     align-items: center;
     gap: 8px;
-    @include border-radius(36px);
     border: 1px solid $colorBlack;
-    padding: 8px 16px;
+    padding: 16px;
+    color: $colorBlack;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: capitalize;
+    @include border-radius(16px);
+    @include invisLink;
   }
 }
 
@@ -1118,17 +1195,37 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 32px;
   margin-left: auto;
-  
+  position: relative;
+  top: -15px;
 
   .select-wrapper {
-    min-width: 152px;
+    min-width: 123px;
+  }
+
+  .selectric {
+    .label {
+      font-size: 14px;
+    }
+
+    .button {
+      width: 28px;
+    }
+  }
+
+  .selectric-scroll {
+    ul {
+      li {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
   }
 }
 
 .catalog-list {
-  margin-top: 34px;
+  margin-top: 31px;
   display: flex;
   flex-wrap: wrap;
   gap: 16px 24px;
@@ -1218,13 +1315,14 @@
 }
 
 .catalog-collections {
-  padding: 80px 0 40px;
+  padding: 50px 0 5px;
 
   .caption {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
   .collections-list {
     justify-content: flex-start;
+    padding-right: 85px;
   }
 }
 
@@ -1236,7 +1334,9 @@
   color: $colorBlack;
   padding: 8px 16px;
   border: solid 1px $colorBlack;
-  @include border-radius(36px);
+  background-color: $colorBlack;
+  @include border-radius(16px);
+  color: $colorWhite;
 }
 
 .category-text {
@@ -1246,7 +1346,7 @@
     @include box-shadow($shadow);
     position: relative;
     overflow: hidden;
-    padding-top: calc(480 / 1376 * 100%);
+    padding-top: calc(628 / 1376 * 100%);
     display: block;
 
     img {
@@ -1258,9 +1358,20 @@
     }
   }
 
-  &__line {
-    padding: 80px 0;
+  .catalog-collections {
+    .caption {
+      margin-bottom: 25px;
+      font-size: 32px;
+      line-height: 32px;
+    }
 
+    & + .catalog-collections {
+      padding-top: 30px;
+    }
+  }
+
+  &__line {
+    padding: 56px 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
@@ -1270,19 +1381,44 @@
     flex-wrap: wrap;
 
     .caption {
-      line-height: 62px;
-      max-width: 555px;
+      line-height: 56px;
+      max-width: 587px;
     }
   }
 
   &__text {
-    width: calc(100% - 555px);
-    max-width: 554px;
+    width: calc(100% - 595px);
+    max-width: 555px;
 
     p {
       & + p {
-        margin-top: 24px;
+        margin-top: 32px;
       }
     }
   }
+}
+
+.caterogy-title {
+  margin-top: -35px;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 30px;
+
+  .icon-name {
+    max-width: 100%;
+    margin-bottom: 14px;
+  }
+
+  .btn {
+    gap: 7px;
+    display: inline-flex;
+    font-size: 14px;
+  }
+}
+
+.caterogy-title__controls {
+  margin-top: 22px;
+  gap: 16px 32px;
+  display: flex;
+  flex-wrap: wrap;
 }

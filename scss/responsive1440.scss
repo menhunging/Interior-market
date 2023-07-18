@@ -86,7 +86,28 @@
     width: calc(100% - 380px - 32px);
   }
 
-  .about-brand__item{
+  .about-brand__item {
     align-items: center;
+  }
+
+  .catalog__leftSide {
+    width: 380px;
+  }
+
+  .catalog__rightSide {
+    width: calc(100% - 380px - 32px);
+  }
+
+  .catalog-list .product-card .product-card__picture {
+    height: 283px;
+  }
+
+  .catalog-pagination .btn {
+    flex-grow: 4;
+    max-width: 100%;
+  }
+
+  .catalog-pagination .pagination {
+    flex-grow: 0.5;
   }
 }

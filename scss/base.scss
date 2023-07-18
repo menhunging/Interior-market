@@ -297,7 +297,7 @@ input {
   background-color: $colorWhite;
   border: 1px solid $colorBlack;
   overflow: hidden;
-  @include border-radius(24px);
+  @include border-radius(16px);
   @include box-shadow(none);
   z-index: -1;
 }
@@ -312,7 +312,7 @@ input {
       font-size: 14px;
       line-height: 18px;
       color: #7b7b7b;
-      padding: 10px 10px;
+      padding: 8px;
       @include transition(all 0.3s);
 
       &.highlighted,

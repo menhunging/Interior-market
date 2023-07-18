@@ -69,3 +69,7 @@
     background-color: #bb0909;
   }
 }
+
+.btn-share{
+  @include border-radius(50%!important);
+}

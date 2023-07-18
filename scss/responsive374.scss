@@ -46,7 +46,6 @@
 
     .label {
       font-size: 14px;
-      padding-right: 41px;
     }
   }
 
@@ -61,5 +60,21 @@
 
   .swiper-controls {
     gap: 8px;
+  }
+
+  .filter-settings {
+    gap: 8px;
+  }
+
+  .catalog-settings {
+    gap: 8px;
+  }
+
+  .catalog-settings .mobile-filter {
+    width: 100%;
+  }
+
+  .catalog-settings .select-wrapper {
+    width: 100%;
   }
 }
