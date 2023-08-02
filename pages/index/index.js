@@ -24,6 +24,10 @@ $(document).ready(function () {
     let swiper = new Swiper(".slider-main", {
       slidesPerView: 4,
       spaceBetween: 32,
+      grid: {
+        rows: 2,
+        fill: "row",
+      },
 
       pagination: {
         el: ".swiper-pagination",
@@ -56,14 +60,14 @@ $(document).ready(function () {
             fill: "row",
           },
         },
-        1441: {
-          slidesPerView: 4.68,
-          spaceBetween: 32,
-          grid: {
-            rows: 1,
-            fill: "row",
-          },
-        },
+        // 1441: {
+        //   slidesPerView: 4.68,
+        //   spaceBetween: 32,
+        //   grid: {
+        //     rows: 1,
+        //     fill: "row",
+        //   },
+        // },
       },
     });
   }
