@@ -225,7 +225,7 @@
 
   .product-card {
     .product-card__picture {
-      height: 163px;
+      height: 164px;
       @include border-radius(24px);
     }
 
@@ -381,7 +381,7 @@
   }
 
   .about-brand__picture {
-    height: 163px;
+    padding-top: calc(320 / 320 * 100%);
   }
 
   .catalog {
@@ -622,5 +622,17 @@
   .btn-share {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .main.headerFixed {
+    margin-top: 80px;
+  }
+
+  .header.fixed {
+    padding: 0 16px;
+  }
+
+  .header.fixed .header-center {
+    padding: 8px 0;
   }
 }

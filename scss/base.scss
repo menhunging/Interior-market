@@ -42,8 +42,8 @@ input {
   @include invisLink;
   @include transition(all 0.3s);
 
-  & > a {
-    z-index: auto;
+  &:hover {
+    opacity: 0.75;
   }
 
   picture {
@@ -58,6 +58,10 @@ input {
 
 .main {
   width: 100%;
+
+  &.headerFixed {
+    margin-top: 224px;
+  }
 }
 
 .link-simple {
@@ -125,6 +129,32 @@ input {
 
     & + input {
       margin-top: 24px;
+    }
+  }
+
+  .btn-telegram {
+    @extend %stylesInput;
+    text-align: left;
+    padding-left: 40px;
+    @include transition(all 0.3s);
+
+    svg {
+      @include transition(all 0.3s);
+
+      path {
+        @include transition(all 0.3s);
+      }
+    }
+
+    &:hover {
+      background-color: $colorBlack;
+      color: $colorWhite;
+
+      svg {
+        path {
+          fill: $colorWhite;
+        }
+      }
     }
   }
 
@@ -500,9 +530,20 @@ div {
   width: 48px;
   height: 48px;
   border: solid 1px $colorBlack;
+  $trans: color 0.3s, background-color 0.3s;
+  @include transition($trans);
 
   path {
     fill: $colorBlack;
+  }
+
+  &:hover {
+    background-color: $colorBlack;
+    color: $colorWhite;
+
+    path {
+      fill: $colorWhite;
+    }
   }
 }
 
@@ -515,10 +556,26 @@ div {
   @include border-radius(16px);
   display: flex;
   align-items: center;
+  $trans: color 0.3s, background-color 0.3s;
+  @include transition($trans);
 
   path {
     fill: $colorBlack;
+    @include transition(all 0.3s);
   }
+
+  &:hover {
+    background-color: $colorBlack;
+    color: $colorWhite;
+
+    path {
+      fill: $colorWhite;
+    }
+  }
+}
+
+.swiper-pagination{
+  z-index: 5;
 }
 
 .swiper-pagination-bullets {
@@ -562,11 +619,21 @@ div {
   border: solid 1px $colorBlack;
   @include border-radius(50%);
   margin-top: -29px;
+  @include transition(all 0.3s);
 
   &:after {
     color: #424242;
     font-size: 16px;
     font-weight: 700;
+  }
+
+  &:hover {
+    background-color: $colorBlack;
+    color: $colorWhite;
+
+    &::after {
+      color: $colorWhite;
+    }
   }
 }
 
@@ -604,6 +671,17 @@ picture {
     margin: 0;
     width: 56px;
     height: 56px;
+    @include transition(all 0.3s);
+
+    &:hover {
+      background-color: $colorBlack;
+      color: $colorWhite;
+      fill: $colorWhite;
+
+      &::after {
+        color: $colorWhite;
+      }
+    }
   }
 
   .swiper-button-next {

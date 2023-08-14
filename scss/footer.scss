@@ -1,5 +1,8 @@
 .footer {
   padding-top: 64px;
+  position: relative;
+  z-index: 8;
+  background-color: #fff;
 
   &__inner {
     display: flex;
@@ -76,7 +79,6 @@
     font-size: 24px;
     line-height: 24px;
   }
-
 }
 
 .social {
@@ -102,8 +104,27 @@
     background-color: $colorBlack;
     border: 1px solid $colorBlack;
     @include border-radius(16px);
-
     color: $colorWhite;
+    @include transition(all 0.3s);
+
+    svg {
+      @include transition(all 0.3s);
+
+      path {
+        @include transition(all 0.3s);
+      }
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $colorBlack;
+
+      svg {
+        path {
+          fill: $colorBlack;
+        }
+      }
+    }
   }
 
   a {

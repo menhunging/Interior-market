@@ -219,7 +219,7 @@
 
   .product-card {
     .product-card__picture {
-      height: 205px;
+      height: 230px;
       @include border-radius(48px);
     }
 
@@ -233,6 +233,8 @@
   }
 
   .product-info__picture {
+    position: relative;
+    top:0;
     width: 100%;
   }
 
@@ -291,7 +293,7 @@
   .catalog__controls {
     gap: 24px;
     justify-content: flex-start;
-    margin-top: 23px;
+    margin-top: 12px;
   }
 
   .catalog-list {
@@ -307,46 +309,11 @@
     }
   }
 
-  .select-product-count {
-    display: none;
-  }
-
   .catalog-settings {
     margin-left: 0;
 
     .select-wrapper {
       min-width: 160px;
-    }
-  }
-
-  .select-product-sort {
-    .selectric {
-      border: solid 1px $colorBlack;
-      @include border-radius(32px);
-
-      .label {
-        // padding: 5px 35px 5px 16px;
-      }
-    }
-
-    .selectric-above {
-      .selectric-items {
-        border-bottom: 0;
-        margin-bottom: -25px;
-        padding-bottom: 25px;
-        @include border-radius-top-left(24px);
-        @include border-radius-top-right(24px);
-      }
-    }
-
-    .selectric-below {
-      .selectric-items {
-        border-top: 0;
-        margin-top: -25px;
-        padding-top: 25px;
-        @include border-radius-bottom-left(24px);
-        @include border-radius-bottom-right(24px);
-      }
     }
   }
 
@@ -471,6 +438,15 @@
     font-size: 14px;
     line-height: 25px;
   }
+  
+  .main.headerFixed {
+    margin-top: 96px;
+  }
+
+  .header.fixed{
+    padding: 0 32px;
+    background-color: $colorBlack;
+  }
 }
 
 @media (max-width: 739px) {
@@ -488,12 +464,16 @@
   }
 
   .about-brand__picture {
+    height: auto;
+    padding-top: calc(320 / 320 * 100%);
     width: 100%;
-    height: 150px;
     @include border-radius(24px);
     position: relative;
 
-    img {
+    img{
+      position: absolute;
+      left:0;
+      top:0;
     }
   }
 
@@ -519,6 +499,8 @@
   }
 
   .catalog__controls {
+    gap: 15px;
+
     .caption {
       font-size: 24px;
       line-height: 24px;
@@ -527,10 +509,6 @@
 
   .filter-settings li {
     padding: 12px;
-  }
-
-  .catalog__controls {
-    gap: 15px;
   }
 
   .filter-settings {
@@ -567,4 +545,16 @@
       width: 100%;
     }
   }
+
+  .product-card .product-card__picture{
+    padding-top: calc(320 / 320 * 100%);
+    position: relative;
+
+    img{
+      position: absolute;
+      top:0;
+      left:0;
+    }
+  }
+
 }

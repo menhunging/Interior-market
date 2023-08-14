@@ -90,12 +90,18 @@
     align-items: center;
   }
 
+  .catalog {
+    &__inner {
+      grid-template-columns: 380px 1fr;
+    }
+  }
+
   .catalog__leftSide {
-    width: 380px;
+    // width: 380px;
   }
 
   .catalog__rightSide {
-    width: calc(100% - 380px - 32px);
+    // width: calc(100% - 380px - 32px);
   }
 
   .catalog-list .product-card .product-card__picture {
@@ -109,5 +115,9 @@
 
   .catalog-pagination .pagination {
     flex-grow: 0.5;
+  }
+
+  .slider-main .swiper-slide {
+    height: 507px;
   }
 }

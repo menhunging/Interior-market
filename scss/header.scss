@@ -1,6 +1,36 @@
 .header {
+  @include transition(top 0.5s);
+  top: -100%;
+
   &__inner {
     padding: 32px 0;
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $colorWhite;
+    z-index: 9;
+    box-shadow: 0px 429.905px 171.813px rgba(0, 0, 0, 0.01),
+      0px 241.729px 145.037px rgba(0, 0, 0, 0.02),
+      0px 107.104px 107.104px rgba(0, 0, 0, 0.03),
+      0px 26.7761px 58.7587px rgba(0, 0, 0, 0.04),
+      0px 0px 0px rgba(0, 0, 0, 0.04);
+
+    .header__inner {
+      padding: 0;
+    }
+
+    .header-bottom,
+    .header-top {
+      display: none;
+    }
+
+    .header-center {
+      padding: 16px 0;
+    }
   }
 }
 
@@ -88,6 +118,12 @@
     position: relative;
   }
 
+  &:hover {
+    .burger__line {
+      background-color: $colorWhite;
+    }
+  }
+
   &.active {
     .burger__line {
       &:nth-child(1) {
@@ -119,9 +155,22 @@
     width: 48px;
     height: 48px;
     border: solid 1px $colorBlack;
+    $trans: color 0.3s, background-color 0.3s;
+    @include transition($trans);
 
     path {
       fill: $colorBlack;
+    }
+
+    &:not(.btn-basket) {
+      &:hover {
+        background-color: $colorBlack;
+        color: $colorWhite;
+
+        path {
+          fill: $colorWhite;
+        }
+      }
     }
   }
 
@@ -152,11 +201,11 @@
     justify-content: space-between;
     width: 100%;
 
-    li{
+    li {
       &:nth-child(2) {
         margin-right: auto;
       }
-  
+
       &:nth-last-child(2) {
         margin-left: auto;
       }
@@ -174,4 +223,8 @@
 
 .header-top__adress {
   width: 240px;
+
+  a {
+    @include text-decoration-hover($colorWhite);
+  }
 }
