@@ -6,4 +6,12 @@
   .catalog-list .product-card {
     width: calc(100% / 3 - 16px);
   }
+
+  .category-text__line {
+    justify-content: flex-start;
+  }
+
+  .category-text__line .caption {
+    max-width: 590px;
+  }
 }

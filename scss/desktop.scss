@@ -427,10 +427,36 @@
 
   &--play {
     left: 50px;
+
+    .icon-paused {
+      display: none;
+    }
+
+    &.paused {
+      .icon-play {
+        display: none;
+      }
+      .icon-paused {
+        display: block;
+      }
+    }
   }
 
   &--volume {
     left: 114px;
+
+    .icon-not-mute {
+      display: none;
+    }
+
+    &.mute {
+      .icon-mute {
+        display: none;
+      }
+      .icon-not-mute {
+        display: block;
+      }
+    }
   }
 
   svg {
@@ -508,10 +534,10 @@
   .btn {
     margin-top: 24px;
   }
+}
 
-  .text-section__inner--right {
-    flex-direction: row-reverse;
-  }
+.text-section__inner--right {
+  flex-direction: row-reverse;
 }
 
 .subscribe-section {
@@ -579,6 +605,10 @@
     $transition: opacity 0.3s, transform 0.3s;
     @include transition($transition);
   }
+}
+
+.slider-article {
+  margin-top: 64px;
 }
 
 .product-card {
@@ -718,8 +748,8 @@
   background-color: #dd4242;
   color: $colorWhite;
   position: absolute;
-  left: 34px;
-  top: 32px;
+  left: 24px;
+  top: 24px;
   z-index: 5;
 }
 
@@ -1140,13 +1170,10 @@
   padding: 34px 0;
 
   &__inner {
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: flex-start;
-    // justify-content: space-between;
     display: grid;
     grid-template-columns: 320px 1fr;
     align-items: flex-start;
+    gap: 32px 0;
   }
 
   &__leftSide {
@@ -1155,12 +1182,11 @@
     top: 100px;
     left: 0;
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/3;
   }
 
   &__rightSide {
-    // width: calc(100% - 320px - 32px);
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 2/2;
   }
 
@@ -1169,13 +1195,19 @@
   }
 }
 
+.caterory-info {
+  width: 320px;
+  grid-column: 1/2;
+  grid-row: 2/2;
+
+  .caption {
+    text-transform: none;
+  }
+}
+
 .caterogy-title {
   grid-column: 1/2;
   grid-row: 1/2;
-
-  & + .catalog__leftSide {
-    margin-top: 250px;
-  }
 }
 
 .catalog__controls {
@@ -1183,6 +1215,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  grid-column: 1/3;
+  grid-row: 1/2;
 
   .caption {
     font-size: 32px;
@@ -1270,7 +1304,6 @@
 }
 
 .catalog-list {
-  margin-top: 31px;
   display: flex;
   flex-wrap: wrap;
   gap: 16px 24px;
@@ -1424,10 +1457,12 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
 
     .caption {
       line-height: 56px;
-      max-width: 587px;
+      max-width: 660px;
     }
   }
 
@@ -1463,7 +1498,224 @@
 
 .caterogy-title__controls {
   margin-top: 22px;
-  gap: 16px 32px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+
+  .btn {
+    display: inline-flex;
+    gap: 7px;
+    align-items: center;
+  }
+}
+
+.link-login-cabinet {
+  background-color: $colorBlack;
+
+  svg {
+    path {
+      fill: $colorWhite;
+    }
+  }
+
+  &:hover {
+    background-color: $colorWhite;
+
+    svg {
+      path {
+        fill: $colorBlack;
+      }
+    }
+  }
+}
+
+.link-new {
+  color: $colorNew;
+
+  &:hover {
+    text-decoration-color: $colorNew !important;
+  }
+}
+
+.product-new {
+  color: $colorWhite;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  background-color: $colorNew;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  z-index: 5;
+  border-radius: 32px;
+  padding: 8px;
+
+  & + * {
+    margin-left: 85px;
+  }
+}
+
+.title-page {
+  padding-bottom: 80px;
+  position: relative;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.text-section__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+  color: $colorBlack;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 24px;
+}
+
+.date,
+.time-read {
+  color: $colorBlack;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.article-section {
+  .slider-caterogy__link {
+    margin-right: auto;
+  }
+}
+
+.article-head__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+
+  .caption {
+    width: auto;
+  }
+
+  .btn {
+  }
+}
+
+.article-slider {
+  padding: 56px 0;
+  overflow: hidden;
+}
+
+.slider-article {
+  overflow: visible;
+
+  .swiper {
+  }
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    @include invisLink;
+
+    &:hover {
+      .picture {
+        @include transform(scale(1.05));
+      }
+
+      .name {
+        text-decoration-color: $colorBlack;
+      }
+    }
+  }
+
+  .picture {
+    padding-top: calc(514 / 380 * 100%);
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 24px;
+    border-radius: 64px;
+    @include box-shadow($shadow);
+    @include invisLink;
+    transition: transform 0.3s;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .name {
+    @include resetInvisLink;
+    color: $colorBlack;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration 0.3s;
+  }
+
+  .date {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .read {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.tag-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+}
+
+.tag-white {
+  z-index: 3;
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  width: auto;
+  height: auto;
+  text-indent: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $colorBlack;
+  background: $colorWhite;
+  box-shadow: 0px 87px 35px rgba(0, 0, 0, 0.01),
+    0px 49px 29px rgba(0, 0, 0, 0.04), 0px 22px 22px rgba(0, 0, 0, 0.07),
+    0px 5px 12px rgba(0, 0, 0, 0.08), 0px 0px 0px rgba(0, 0, 0, 0.08);
+  padding: 15px 18px 15px;
+  @include border-radius(16px);
+}
+
+.tag-list.mobile {
+  display: none;
+}
+
+.slider-article__info {
+  display: flex;
+  flex-direction: column;
 }

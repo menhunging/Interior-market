@@ -47,7 +47,7 @@ $(document).ready(function () {
     initAccardeon(".product-info__details");
   }
 
-  if ($(".video-section").length > 0) {
+  if ($(".video").length > 0) {
     $(".video__btn--full").on("click", function () {
       let elem = $(this).parents(".video").find("video")[0];
       openFullVideo(elem);
@@ -57,6 +57,8 @@ $(document).ready(function () {
       let elem = $(this).parents(".video").find("video");
       let isMuted = elem.prop("muted");
       elem.prop("muted", isMuted);
+
+      $(this).toggleClass("mute");
     });
 
     $(".video__btn--play").on("click", function () {
@@ -134,6 +136,8 @@ $(document).ready(function () {
   if ($(".caterogy-title").length > 0) {
     if ($(window).width() <= responsive1199) {
       wrapText("mobile");
+    } else {
+      wrapText("desktop");
     }
   }
 
@@ -290,9 +294,12 @@ function wrapText(device) {
 
     case "desktop":
       $(".caterogy-title").removeClass("wrap-js");
-      $(".catalog__leftSide").prepend(
-        `<div class='caterogy-title'>${html}</div>`
+      $(".caterory-info").prepend(`<div class='caterogy-title'>${html}</div>`);
+      $(".catalog__leftSide").attr(
+        "style",
+        `margin-top:${$(".caterory-info").height()}px`
       );
+
       break;
 
     default:
@@ -318,5 +325,3 @@ function fixedMobileBtnFilter() {
     btnMobileFilter.removeClass("fixed");
   }
 }
-
-
