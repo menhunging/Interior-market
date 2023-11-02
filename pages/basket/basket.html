@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
-    <title>Article Page</title>
+    <title>Корзина</title>
 
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
@@ -180,389 +180,49 @@
         </header>
 
         <main class="main">
-            <section class="article-page">
-                <section class="text-section">
-                    <div class="container">
-                        <div class="text-section__inner">
-                            <picture class="text-section__picture">
-                                <a href="#"></a>
-                                <source type="image/webp" srcset="../../img/pic-text3.webp">
-                                <img src="../../img/pic-text3.jpg" alt="">
-                                <ul class="tag-list">
-                                    <li>
-                                        <span class="tag-white">#Бренды</span>
-                                    </li>
-                                </ul>
-                            </picture>
-                            <div class="text-section__content">
-                                <div class="text-section__info">
-                                    <span class="date">02.05.2023</span>
-                                    <span class="time-read">Время чтения: 3 минуты</span>
-                                </div>
-                                <a href="#" class="text-section__caption caption caption--small">EDRA: удивляет и
-                                    завораживает</a>
-                                <p>
-                                    История фабрики начинается в 1987 г. Название символизирует развитие итальянского
-                                    стиля, берущего начало в Древнем Риме: exedra – элемент римской постройки, который
-                                    можно назвать прапра современному дивану.
-                                </p>
-                                <a href="#" class="btn btn-white">Читать</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="article-anchor">
-                    <div class="container">
-                        <div class="article-anchor__inner">
+            <section class="basket-section">
+                <div class="container">
+                    <h2 class="caption caption--small">Корзина</h2>
+                    <form class="basket-form">
+                        <div class="basket-section__left">
+                            2 товара
+                        </div>
+                        <div class="basket-section__right">
+                            <div class="input-item">
+                                <label for="">Имя</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-item">
+                                <label for="">номер телефона</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-item">
+                                <label for="">почта</label>
+                                <input type="text">
+                            </div>
+
                             <ul>
-                                <li><a href="#text1" class="simple-link active">Знакомство с EDRA</a></li>
-                                <li><a href="#text2" class="simple-link">Рожденная в Тоскане</a></li>
-                                <li><a href="#text3" class="simple-link">Их авторы</a></li>
+                                <li>
+                                    <span class="tit">Сумма:</span>
+                                    <span class="price">2 783 424₽</span>
+                                </li>
+                                <li>
+                                    <span class="tit">Доставка:</span>
+                                    <span class="price">12 000₽</span>
+                                </li>
+                                <li>
+                                    <span class="tit">Итого:</span>
+                                    <span class="price">2 783 424₽</span>
+                                </li>
                             </ul>
+
+                            <button class="btn btn-black">Оформить заказ</button>
                         </div>
-                    </div>
-                </section>
-
-                <section class="article-page__content">
-                    <div class="container">
-                        <div class="category-text">
-                            <div class="category-text__line step-text" id="text1">
-                                <h2 class="caption caption--small">Знакомство с EDRA</h2>
-                                <div class="category-text__text">
-                                    <p>Почему мебель из Италии завоевала признание во всем мире? Поточу что
-                                        итальянцы имеют
-                                        многовековые традиции в дизайне и производстве мебели.</p>
-
-                                    <p>Почему #EDRA заслужили всемирную популярность. Потому что их интерьерные
-                                        решения
-                                        выражают философию итальянского стиля и гостеприимства.</p>
-                                </div>
-                            </div>
-
-                            <div class="pictures">
-                                <picture class="picture">
-                                    <source type="image/webp" srcset="../../img/pic-category.webp">
-                                    <img src="../../img/pic-category.jpg" alt="">
-                                </picture>
-
-                                <picture class="picture">
-                                    <source type="image/webp" srcset="../../img/pic-category.webp">
-                                    <img src="../../img/pic-category.jpg" alt="">
-                                </picture>
-                            </div>
-
-                            <div class="category-text__line step-text" id="text2">
-                                <h2 class="caption caption--small">Рожденная в Тоскане</h2>
-                                <div class="category-text__text">
-                                    <p>История фабрики начинается в 1987 г. Название символизирует развитие итальянского
-                                        стиля, берущего начало в Древнем Риме: exedra – элемент римской постройки,
-                                        который можно назвать прапра современному дивану.</p>
-
-                                    <p>Ассортимент компании не ограничивается #диванами — это и #кресла, #обеденные
-                                        столы и стулья, #кровати, различные светильники, декор с узнаваемым дизайном, из
-                                        необычных материалов и с безупречным качеством.</p>
-                                </div>
-                            </div>
-
-                            <picture class="picture">
-                                <source type="image/webp" srcset="../../img/pic-category.webp">
-                                <img src="../../img/pic-category.jpg" alt="">
-                            </picture>
-
-                            <div class="category-text__line step-text" id="text3">
-                                <h2 class="caption caption--small">Их авторы</h2>
-                                <div class="category-text__text">
-                                    <p>Франческо Бинфаре, Якопо Фогджини, Масанори Умеда, Фернандо и Умберто Кампана –
-                                        такие разные и такие прекрасные! Их объединяет великая любовь к творчеству и
-                                        стремление к исследованиям в области дизайна.</p>
-
-                                    <p>Они делают бренд узнаваемым, востребованным и всегда модным. Их интерьерные
-                                        решения вне стиля и времени, их разработки – путь к совершенству.</p>
-
-                                    <p>В Интерьер Маркет полная коллекция мебели #EDRA. Модели доступны из наличия со
-                                        склада в Москве и под заказ из каталога.</p>
-                                </div>
-                            </div>
-
-                            <picture class="picture">
-                                <source type="image/webp" srcset="../../img/pic-category.webp">
-                                <img src="../../img/pic-category.jpg" alt="">
-                            </picture>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section class="products-section">
-                    <div class="container">
-                        <h2 class="caption">товары из материала</h2>
-                        <div class="products__slider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="product-card product-cart--sale">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <span class="percent-sale"> -30% </span>
-                                            <source type="image/webp" srcset="../../img/product-item1.webp" />
-                                            <img src="../../img/product-item1.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span class="price-current">891 712₽</span>
-                                                <span class="price-old">1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item2.webp" />
-                                            <img src="../../img/product-item2.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span
-                                                class="product-card__availability product-card__availability--order">под
-                                                заказ</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span>по запросу</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item3.webp" />
-                                            <img src="../../img/product-item3.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span>1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item4.webp" />
-                                            <img src="../../img/product-item4.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span class="price-current">891 712₽</span>
-                                                <span class="price-old">1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item1.webp" />
-                                            <img src="../../img/product-item1.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span class="price-current">891 712₽</span>
-                                                <span class="price-old">1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item2.webp" />
-                                            <img src="../../img/product-item2.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span
-                                                class="product-card__availability product-card__availability--order">под
-                                                заказ</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span>по запросу</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item3.webp" />
-                                            <img src="../../img/product-item3.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span>1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item4.webp" />
-                                            <img src="../../img/product-item4.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span class="price-current">891 712₽</span>
-                                                <span class="price-old">1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="article-slider">
-                    <div class="container">
-                        <h2 class="caption">читайте также</h2>
-                        <div class="slider-article swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <picture class='picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/pic-article1.webp" />
-                                        <img src="../../img/pic-article1.jpg" alt="" />
-                                        <ul class="tag-list">
-                                            <li>
-                                                <span class="tag-white">#Бренды</span>
-                                            </li>
-                                        </ul>
-                                    </picture>
-                                    <div class="slider-article__info">
-                                        <ul class="tag-list mobile">
-                                            <li>
-                                                <span class="tag-white">#Бренды</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#" class="name">Lasvit на выставке в Милане 2022</a>
-                                        <span class="date">02.05.2023</span>
-                                        <span class="read">Время чтения: 3 минуты</span>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" class="link"></a>
-                                    <picture class='picture'>
-                                        <source type="image/webp" srcset="../../img/pic-article1.webp" />
-                                        <img src="../../img/pic-article1.jpg" alt="" />
-                                        <ul class="tag-list">
-                                            <li>
-                                                <span class="tag-white">#Бренды</span>
-                                            </li>
-                                        </ul>
-                                    </picture>
-                                    <div class="slider-article__info">
-                                        <ul class="tag-list mobile">
-                                            <li>
-                                                <span class="tag-white">#Бренды</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#" class="name">Новая концепция современного дома Molteni&C на Salone
-                                            del
-                                            Mobile 2022</a>
-
-                                        <span class="date">02.05.2023</span>
-                                        <span class="read">Время чтения: 3 минуты</span>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" class="link"></a>
-                                    <picture class='picture'>
-                                        <source type="image/webp" srcset="../../img/pic-article1.webp" />
-                                        <img src="../../img/pic-article1.jpg" alt="" />
-                                        <ul class="tag-list">
-                                            <li>
-                                                <span class="tag-white">#Бренды</span>
-                                            </li>
-                                        </ul>
-                                    </picture>
-                                    <div class="slider-article__info">
-                                        <ul class="tag-list mobile">
-                                            <li>
-                                                <span class="tag-white">#Бренды</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#" class="name">ClassiCon: Новая классика</a>
-                                        <span class="date">02.05.2023</span>
-                                        <span class="read">Время чтения: 3 минуты</span>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" class="link"></a>
-                                    <picture class='picture'>
-                                        <source type="image/webp" srcset="../../img/pic-article1.webp" />
-                                        <img src="../../img/pic-article1.jpg" alt="" />
-                                        <ul class="tag-list">
-                                            <li>
-                                                <span class="tag-white">#Бренды</span>
-                                            </li>
-                                        </ul>
-                                    </picture>
-                                    <div class="slider-article__info">
-                                        <a href="#" class="name">MINOTTI: роскошь минимализма</a>
-                                        <span class="date">02.05.2023</span>
-                                        <span class="read">Время чтения: 3 минуты</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+                    </form>
+                </div>
             </section>
+
         </main>
 
         <footer class="footer">

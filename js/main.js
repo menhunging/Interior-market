@@ -1,4 +1,5 @@
 let positionMobileBtnFilter = null; // переменная для кнопки вызова фильтра
+let positionAnchorFixed = null;
 let responsive1199 = 1199;
 let responsive1023 = 1023;
 let responsive739 = 739;
@@ -23,6 +24,10 @@ addEventListener("scroll", (event) => {
       fixedMobileBtnFilter();
     }
   }
+
+  console.log(positionAnchorFixed);
+
+  fixedAnchor();
 });
 
 $(document).ready(function () {
@@ -143,6 +148,47 @@ $(document).ready(function () {
 
   if ($(".mobile-filter").length > 0) {
     positionMobileBtnFilter = getPositionBtnFilter($(".mobile-filter"));
+  }
+
+  if ($(".article-anchor").length > 0) {
+    let sections = $(".step-text");
+
+    let posSection = [];
+
+    positionAnchorFixed =
+      $(".article-anchor").offset().top + $(".article-anchor").height();
+
+    sections.each(function (i, el) {
+      posSection.push({
+        id: $(el).attr("id"),
+        pos: $(el).offset().top - 150,
+      });
+    });
+
+    $(".article-anchor a").on("click", function (event) {
+      event.preventDefault();
+
+      let id = $(this).attr("href");
+      let top = $(id).offset().top - 80;
+
+      console.log(id);
+
+      $("body,html").animate({ scrollTop: top }, 300);
+    });
+
+    $(window).scroll(function () {
+      sections.each(function (i, el) {
+        let top = $(el).offset().top;
+        let bottom = top + $(el).height();
+        let scroll = $(window).scrollTop();
+        let id = $(el).attr("id");
+
+        if (scroll > top && scroll < bottom) {
+          $(".article-anchor a.active").removeClass("active");
+          $('.article-anchor a[href="#' + id + '"]').addClass("active");
+        }
+      });
+    });
   }
 
   // ---------------------------------------
@@ -323,5 +369,17 @@ function fixedMobileBtnFilter() {
   } else {
     parents.css("padding-bottom", "0");
     btnMobileFilter.removeClass("fixed");
+  }
+}
+
+function fixedAnchor() {
+  let fixBlock = $(".article-anchor");
+
+  if (currentScroll > positionAnchorFixed) {
+    // parents.css("padding", `${fixBlock.outerHeight() + 48}px`);
+    fixBlock.addClass("fixed");
+  } else {
+    // parents.css("padding-bottom", "0");
+    fixBlock.removeClass("fixed");
   }
 }

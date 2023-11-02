@@ -14,4 +14,8 @@
   .category-text__line .caption {
     max-width: 590px;
   }
+
+  .brand-item {
+    width: calc(100% / 3 - 18px);
+  }
 }
