@@ -557,6 +557,37 @@
   .brand-item-more__picture {
     padding-bottom: 24px;
   }
+
+  .basket-section {
+    padding: 24px 0;
+  }
+
+  .basket-invis {
+    right: 0;
+    left: auto;
+    top: calc(100% + 10px);
+    transform: translateX(100%);
+
+    &.opened {
+    }
+  }
+
+  .cat-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-invis {
+    right: 0;
+    left: auto;
+    top: 41px;
+    transform: translateX(100%);
+  }
+
+  main {
+    .category-section:first-child {
+      padding-top: 30px;
+    }
+  }
 }
 
 @media (max-width: 739px) {
@@ -695,5 +726,26 @@
 
   .brand-icons {
     gap: 8px;
+  }
+
+  .basket-form {
+    gap: 16px;
+  }
+
+  .basket-section__right {
+    padding: 8px;
+    max-width: 280px;
+  }
+
+  .basket-section__left {
+    padding: 8px;
+  }
+
+  .menu-invis {
+    padding: 50px 24px 24px;
+
+    &__controls {
+      gap: 8px;
+    }
   }
 }

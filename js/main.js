@@ -25,15 +25,39 @@ addEventListener("scroll", (event) => {
     }
   }
 
-  console.log(positionAnchorFixed);
-
   fixedAnchor();
 });
 
 $(document).ready(function () {
   if ($(".burger").length > 0) {
+    let menuInvis = $(".menu-invis");
+    let body = $("body");
+    let overlay = $(".menu-overlay");
+
     $(".burger").on("click", function () {
-      $(this).toggleClass("active");
+      if (menuInvis.hasClass("opened")) {
+        menuInvis.removeClass("opened");
+        body.removeClass("hidden");
+        overlay.removeClass("opened");
+        $(document).off("mouseup");
+      } else {
+        menuInvis.addClass("opened");
+        body.addClass("hidden");
+        overlay.addClass("opened");
+
+        $(document).mouseup(function (e) {
+          if (
+            !menuInvis.is(e.target) &&
+            menuInvis.has(e.target).length === 0 &&
+            !$(".burger").is(e.target)
+          ) {
+            body.removeClass("hidden");
+            overlay.removeClass("opened");
+            menuInvis.removeClass("opened");
+            $(document).off("mouseup");
+          }
+        });
+      }
     });
   }
 
@@ -191,19 +215,178 @@ $(document).ready(function () {
     });
   }
 
-  // ---------------------------------------
+  if ($(".phone-input").length > 0) {
+    $(".phone-input").map(function () {
+      $(this).inputmask({
+        mask: "+7(999) 999-99-99",
+        placeholder: "*",
+        showMaskOnHover: false,
+        showMaskOnFocus: true,
+        clearIncomplete: true,
+      });
+    });
+  }
 
-  // if ($(".phoneInput").length > 0) {
-  //   $(".phoneInput").map(function () {
-  //     $(this).inputmask({
-  //       mask: "+7(999) 999-99-99",
-  //       placeholder: "*",
-  //       showMaskOnHover: false,
-  //       showMaskOnFocus: true,
-  //       clearIncomplete: true,
-  //     });
-  //   });
-  // }
+  if ($(".count-block").length > 0) {
+    $(".count-block").map(function () {
+      let plus = $(this).find(".count-plus");
+      let minus = $(this).find(".count-minus");
+      let input = $(this).find(".input-count");
+      let count = $(this).find(".input-count").val();
+
+      plus.on("click", function (e) {
+        e.preventDefault();
+        count++;
+        input.val(count);
+      });
+
+      minus.on("click", function (e) {
+        e.preventDefault();
+        count--;
+
+        if (count < 0) {
+          count = 0;
+        }
+
+        input.val(count);
+      });
+    });
+  }
+
+  if ($(".btn-basket").length > 0) {
+    let basketInvis = $(".basket-invis");
+
+    $(".btn-basket").on("click", function () {
+      $(document).off("mouseup");
+
+      if (basketInvis.hasClass("opened")) {
+        basketInvis.removeClass("opened");
+      } else {
+        $(".menu-invis").removeClass("opened");
+        basketInvis.addClass("opened");
+
+        $(document).mouseup(function (e) {
+          if (
+            !basketInvis.is(e.target) &&
+            basketInvis.has(e.target).length === 0 &&
+            !$(".btn-basket").is(e.target)
+          ) {
+            basketInvis.removeClass("opened");
+            $(document).off("mouseup");
+          }
+        });
+      }
+    });
+  }
+
+  if ($(".btn-search").length > 0) {
+    let searchInvis = $(".search-invis");
+
+    $(document).off("mouseup");
+
+    $(".btn-search").on("click", function () {
+      if (searchInvis.hasClass("opened")) {
+        searchInvis.removeClass("opened");
+      } else {
+        searchInvis.addClass("opened");
+
+        $(document).mouseup(function (e) {
+          if (
+            !searchInvis.is(e.target) &&
+            searchInvis.has(e.target).length === 0 &&
+            !$(".btn-search").is(e.target)
+          ) {
+            searchInvis.removeClass("opened");
+            $(document).off("mouseup");
+          }
+        });
+      }
+    });
+  }
+
+  if ($(".slider-caterogy").length > 0) {
+    const sliders = document.querySelectorAll(".slider-caterogy");
+    let mySwipers = [];
+
+    function sliderinit() {
+      sliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 4,
+            slidesPerGroup: 1,
+            spaceBetween: 32,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "fraction",
+              formatFractionCurrent: function (number) {
+                return number;
+              },
+            },
+            breakpoints: {
+              320: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 16,
+              },
+              744: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+              },
+              850: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+              },
+              1200: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+              },
+              1441: {
+                slidesPerView: 4.68,
+              },
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
+
+    sliders.length && sliderinit();
+  }
+
+  if ($(".menu-invis").length > 0) {
+    let links = $(".menu-invis .menu-link");
+
+    links.map(function () {
+      if ($(this).next("ul").length === 0) {
+        $(this).addClass("not-arrow");
+      }
+    });
+
+    links.on("click", function (event) {
+      if (!$(this).hasClass("not-arrow")) {
+        event.preventDefault();
+
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+          $(this).next("ul").slideUp();
+        } else {
+          close($(this));
+          $(this).addClass("active");
+          $(this).next("ul").slideDown();
+        }
+      }
+    });
+
+    function close(block) {
+      let parentLinks = block.closest("ul").find(".menu-link");
+
+      parentLinks.removeClass("active");
+      parentLinks.next("ul").slideUp();
+    }
+  }
+
+  // ---------------------------------------
 
   // if ($(".modal").length > 0) {
   //   MicroModal.init({

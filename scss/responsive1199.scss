@@ -656,4 +656,10 @@
   .brand-item-more {
     width: calc(100% / 3 - 20px);
   }
+
+  .cat-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+  }
 }
