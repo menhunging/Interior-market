@@ -252,15 +252,13 @@ input {
 .check-block {
   display: flex;
   align-items: center;
-  min-height: 36px;
+  min-height: 24px;
 
   input {
     display: none;
 
     &:checked {
       & + label {
-        color: $colorBlack;
-
         &::after {
           background-color: $colorBlack;
         }
@@ -275,30 +273,30 @@ input {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #80726a;
+    color: $colorBlack;
     display: block;
     text-align: left;
     @include transition(color 0.3s);
+    width: 100%;
 
     @include before {
       left: 0;
       top: 50%;
-      width: 25px;
-      height: 25px;
-      margin-top: -12.5px;
-      border: solid 1px #80726a;
-      @include border-radius(50%);
+      width: 20px;
+      height: 20px;
+      transform: translateY(-50%);
+      border: solid 1px rgba(0, 0, 0, 0.48);
+      border-radius: 3px;
     }
 
     @include after {
       top: 50%;
-      left: 8px;
+      left: 5px;
       top: 50%;
-      width: 9.29px;
-      height: 9.29px;
-      margin-top: -4px;
-      background-color: #80726a;
-      @include border-radius(50%);
+      width: 10px;
+      height: 10px;
+      transform: translateY(-50%);
+      border-radius: 2px;
     }
   }
 

@@ -99,9 +99,14 @@
     width: 100%;
   }
 
-  .basket-invis{
+  .basket-invis {
     padding: 8px;
     border-radius: 16px;
     max-width: 300px;
+  }
+
+  .catalog__leftSide {
+    width: 290px;
+    left: -290px;
   }
 }

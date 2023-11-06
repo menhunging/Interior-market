@@ -196,7 +196,11 @@
   }
 
   .catalog__leftSide {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: -320px;
+    z-index: 11;
+    width: 320px;
   }
 
   .catalog__rightSide {
@@ -661,5 +665,41 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     margin-top: 24px;
+  }
+
+  .filter-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 11;
+    width: 100%;
+    padding: 24px 16px;
+    height: 100vh;
+    transition: all 0.3s;
+    overflow: auto;
+
+    &.opened {
+      left: 100%;
+    }
+  }
+
+  .catalog__leftSide {
+    &.overlay {
+      &::before {
+        display: block;
+      }
+    }
+
+    @include before {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      left: 320px;
+      top: 0;
+      pointer-events: none;
+      background: $colorBlack;
+      opacity: 0.24;
+    }
   }
 }
