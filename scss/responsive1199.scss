@@ -43,6 +43,7 @@
     align-items: center;
     justify-content: center;
     @include border-radius(50%);
+    text-indent: 200%;
 
     svg {
       width: 100%;
@@ -118,7 +119,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
@@ -612,7 +613,7 @@
       margin-top: 0;
 
       .picture {
-        padding-top: calc(276 / 343 * 100%);
+        padding-top: calc(300 / 472 * 100%);
       }
     }
   }
@@ -701,5 +702,13 @@
       background: $colorBlack;
       opacity: 0.24;
     }
+  }
+
+  .catalog-settings .select-wrapper {
+    min-width: 130px;
+  }
+
+  .catalog-settings .select-product-sort .selectric-open .selectric-items {
+    width: 180px !important;
   }
 }

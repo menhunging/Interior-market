@@ -138,6 +138,9 @@ input {
     text-align: left;
     padding-left: 40px;
     @include transition(all 0.3s);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
     svg {
       @include transition(all 0.3s);

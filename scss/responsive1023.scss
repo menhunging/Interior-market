@@ -584,6 +584,22 @@
       padding-top: 30px;
     }
   }
+
+  .link-login-cabinet:hover {
+    background-color: transparent;
+
+    svg path {
+      fill: $colorWhite;
+    }
+  }
+
+  .article-page {
+    padding-top: 20px;
+  }
+
+  .siteWrapper {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 739px) {

@@ -284,6 +284,9 @@ $(document).ready(function () {
 
   if ($(".btn-basket").length > 0) {
     let basketInvis = $(".basket-invis");
+    let menuInvis = $(".menu-invis");
+    let body = $("body");
+    let overlay = $(".menu-overlay");
 
     $(".btn-basket").on("click", function () {
       $(document).off("mouseup");
@@ -291,8 +294,10 @@ $(document).ready(function () {
       if (basketInvis.hasClass("opened")) {
         basketInvis.removeClass("opened");
       } else {
-        $(".menu-invis").removeClass("opened");
+        menuInvis.removeClass("opened");
         basketInvis.addClass("opened");
+        body.removeClass("hidden");
+        overlay.removeClass("opened");
 
         $(document).mouseup(function (e) {
           if (

@@ -22,4 +22,14 @@
   .catalog__leftSide {
     width: 300px;
   }
+
+  .slider-main {
+    .swiper-pagination-fraction {
+      display: flex;
+    }
+  }
+
+  .text-section__inner--right {
+    flex-direction: row;
+  }
 }

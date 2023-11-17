@@ -346,6 +346,9 @@ input {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .input-item .btn-telegram svg {
   -webkit-transition: all 0.3s;
@@ -1694,13 +1697,11 @@ a.caption:hover {
   object-position: center;
 }
 .slider-main .swiper-pagination-fraction {
-  display: flex;
-  align-items: center;
   justify-content: center;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  display: flex;
+  display: none;
   align-items: center;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
@@ -2621,6 +2622,12 @@ a.caption:hover {
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   border-radius: 16px;
+  transition: all 0.3s;
+}
+.collections-list a:hover {
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .catalog-collections__more {
@@ -2755,6 +2762,7 @@ a.caption:hover {
   border-radius: 16px;
   position: relative;
   z-index: 1;
+  transition: all 0.3s;
 }
 .filter-settings li > a {
   display: block;
@@ -2767,6 +2775,10 @@ a.caption:hover {
   overflow: hidden;
   text-indent: 200%;
   white-space: nowrap;
+}
+.filter-settings li:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .filter-settings__title {
@@ -2822,6 +2834,20 @@ a.caption:hover {
   -moz-border-radius: 42px;
   -ms-border-radius: 42px;
   border-radius: 42px;
+  position: relative;
+  z-index: 1;
+}
+.catalog-list .product-card .product-card__picture > a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  overflow: hidden;
+  text-indent: 200%;
+  white-space: nowrap;
 }
 .catalog-list .product-card .product-card__availability {
   padding-left: 12px;
@@ -2921,6 +2947,7 @@ a.caption:hover {
   top: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .category-text .catalog-collections .caption {
   margin-bottom: 25px;
@@ -3997,6 +4024,9 @@ a.caption:hover {
   line-height: 24px;
 }
 .filter-section .input-item input {
+  color: rgb(0, 0, 0);
+}
+.filter-section .input-item input::placeholder {
   color: rgba(0, 0, 0, 0.48);
 }
 .filter-section .list-letters {
@@ -4273,7 +4303,7 @@ a.caption:hover {
   .about-brand__picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .about-brand__content {
     width: calc(100% - 380px - 32px);
@@ -4323,6 +4353,12 @@ a.caption:hover {
   .catalog__leftSide {
     width: 300px;
   }
+  .slider-main .swiper-pagination-fraction {
+    display: flex;
+  }
+  .text-section__inner--right {
+    flex-direction: row;
+  }
 }
 @media (max-width: 1199px) {
   .container {
@@ -4367,6 +4403,7 @@ a.caption:hover {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
+    text-indent: 200%;
   }
   .phone-block svg {
     width: 100%;
@@ -4433,7 +4470,7 @@ a.caption:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .about-brand__item {
     flex-direction: column;
@@ -4844,7 +4881,7 @@ a.caption:hover {
     margin-top: 0;
   }
   .article-page .category-text .picture {
-    padding-top: 80.4664723032%;
+    padding-top: 63.5593220339%;
   }
   .article-page .category-text__line {
     max-width: 442px;
@@ -4918,6 +4955,12 @@ a.caption:hover {
     pointer-events: none;
     background: rgb(0, 0, 0);
     opacity: 0.24;
+  }
+  .catalog-settings .select-wrapper {
+    min-width: 130px;
+  }
+  .catalog-settings .select-product-sort .selectric-open .selectric-items {
+    width: 180px !important;
   }
 }
 @media (max-width: 1023px) {
@@ -5398,6 +5441,18 @@ a.caption:hover {
   }
   main .category-section:first-child {
     padding-top: 30px;
+  }
+  .link-login-cabinet:hover {
+    background-color: transparent;
+  }
+  .link-login-cabinet:hover svg path {
+    fill: rgb(255, 255, 255);
+  }
+  .article-page {
+    padding-top: 20px;
+  }
+  .siteWrapper {
+    overflow: hidden;
   }
 }
 @media (max-width: 739px) {
