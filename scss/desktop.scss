@@ -2725,9 +2725,7 @@
   }
 
   .check-block {
-    & + .check-block {
-      margin-top: 12px;
-    }
+    margin-top: 12px;
   }
 }
 

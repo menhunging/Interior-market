@@ -4194,7 +4194,7 @@ a.caption:hover {
   opacity: 0;
   pointer-events: none;
 }
-.check-list .check-block + .check-block {
+.check-list .check-block {
   margin-top: 12px;
 }
 

@@ -450,6 +450,10 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".filter-section").length > 0) {
+    initFilterSort();
+  }
+
   // ---------------------------------------
 
   // if ($(".modal").length > 0) {
@@ -629,4 +633,52 @@ function fixedAnchor() {
     // parents.css("padding-bottom", "0");
     fixBlock.removeClass("fixed");
   }
+}
+
+function initFilterSort() {
+  $(".list-letters li").on("click", function (e) {
+    e.preventDefault();
+
+    $(".input-brand-filter").val("");
+    $(".list-letters li").removeClass("active");
+    $(this).addClass("active");
+
+    let sortValue = $(this).text().toLowerCase();
+    let brandsItems = $(".filter-brand .check-block");
+
+    $(".check-list .letter").show();
+
+    // проверка совпадения первой буквы названия брендов с выбранным значением в списке букв и скрытие не совпадающих элементов
+    brandsItems.each(function () {
+      let curreElem = $(this).find("label").text();
+      let currArr = curreElem.toLowerCase().replace(/ /g, "").split("");
+
+      if (sortValue !== "a–z") {
+        currArr[0] == sortValue ? $(this).show() : $(this).hide();
+
+        $(".check-list .letter").each(function () {
+          if ($(this).text().toLowerCase() !== sortValue) {
+            $(this).hide();
+          }
+        });
+      } else {
+        $(this).show();
+      }
+    });
+  });
+
+  $(".input-brand-filter").on("keyup", function () {
+    let inputVal = $(this).val().toLowerCase(); //значение инпута
+
+    $(".check-list .letter").hide();
+    $(".list-letters li").removeClass("active");
+    $(".list-letters li:first-child").addClass("active");
+
+    setTimeout(function () {
+      $(".filter-brand .check-block").each(function () {
+        let chbVal = $(this).find("label").text().toLowerCase();
+        chbVal.indexOf(inputVal) + 1 ? $(this).show() : $(this).hide();
+      });
+    }, 500);
+  });
 }
