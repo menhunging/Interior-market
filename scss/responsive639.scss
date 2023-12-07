@@ -733,4 +733,13 @@
       padding-right: 50px;
     }
   }
+
+  .catalog-new__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+
+  .catalog-new__item{
+    border-radius: 32px;
+  }
 }

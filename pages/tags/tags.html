@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
-    <title>Article Page</title>
+    <title>Теги</title>
 
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
@@ -88,6 +88,7 @@
                             <li>
                                 <button class="header-controls__button btn-basket">
                                     <picture>
+                                        <source media="(max-width:1023px)" srcset="../../img/basket_white.svg" />
                                         <img src="../../img/basket.svg" alt="basket" />
                                     </picture>
                                     <span class="btn-basket__count">1</span>
@@ -464,465 +465,410 @@
         </header>
 
         <main class="main">
-            <section class="article-page">
-                <section class="text-section">
-                    <div class="container">
-                        <div class="text-section__inner">
-                            <picture class="text-section__picture">
-                                <a href="#"></a>
-                                <source type="image/webp" srcset="../../img/pic-text3.webp">
-                                <img src="../../img/pic-text3.jpg" alt="">
-                                <ul class="tag-list">
-                                    <li>
-                                        <span class="tag-white">#Бренды</span>
-                                    </li>
-                                </ul>
-                            </picture>
-                            <div class="text-section__content">
-                                <div class="text-section__info">
-                                    <span class="date">02.05.2023</span>
-                                    <span class="time-read">Время чтения: 3 минуты</span>
-                                </div>
-                                <a href="#" class="text-section__caption caption caption--small">EDRA: удивляет и
-                                    завораживает</a>
-                                <p>
-                                    История фабрики начинается в 1987 г. Название символизирует развитие итальянского
-                                    стиля, берущего начало в Древнем Риме: exedra – элемент римской постройки, который
-                                    можно назвать прапра современному дивану.
-                                </p>
-                                <a href="#" class="btn btn-white">Читать</a>
+            <seciton class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li><a href="#">Мебель</a></li>
+                        <li><span>Теги</span></li>
+                    </ul>
+                </div>
+            </seciton>
+
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__inner">
+
+                        <div class="catalog__controls">
+
+                            <h1 class="caption">Теги</h1>
+
+                            <div class="catalog-settings">
+
+                                <button class="mobile-filter">
+
+                                    Фильтры
+
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.5 10.2496H2.5C2.36739 10.2496 2.24021 10.3023 2.14645 10.396C2.05268 10.4898 2 10.617 2 10.7496C2 10.8822 2.05268 11.0094 2.14645 11.1031C2.24021 11.1969 2.36739 11.2496 2.5 11.2496H8.5C8.63261 11.2496 8.75979 11.1969 8.85355 11.1031C8.94732 11.0094 9 10.8822 9 10.7496C9 10.617 8.94732 10.4898 8.85355 10.396C8.75979 10.3023 8.63261 10.2496 8.5 10.2496Z"
+                                            fill="white" />
+                                        <path
+                                            d="M13.5 10.2496H11V9.24957C11 9.11696 10.9473 8.98979 10.8536 8.89602C10.7598 8.80225 10.6326 8.74957 10.5 8.74957C10.3674 8.74957 10.2402 8.80225 10.1464 8.89602C10.0527 8.98979 10 9.11696 10 9.24957V12.2496C10 12.3822 10.0527 12.5094 10.1464 12.6031C10.2402 12.6969 10.3674 12.7496 10.5 12.7496C10.6326 12.7496 10.7598 12.6969 10.8536 12.6031C10.9473 12.5094 11 12.3822 11 12.2496V11.2496H13.5C13.6326 11.2496 13.7598 11.1969 13.8536 11.1031C13.9473 11.0094 14 10.8822 14 10.7496C14 10.617 13.9473 10.4898 13.8536 10.396C13.7598 10.3023 13.6326 10.2496 13.5 10.2496Z"
+                                            fill="white" />
+                                        <path
+                                            d="M2.5 5.74954L4.5 5.7496C4.63261 5.7496 4.75979 5.69693 4.85355 5.60316C4.94732 5.50939 5 5.38221 5 5.2496C5 5.117 4.94732 4.98982 4.85355 4.89605C4.75979 4.80228 4.63261 4.7496 4.5 4.7496L2.5 4.74954C2.36739 4.74954 2.24021 4.80222 2.14645 4.89599C2.05268 4.98976 2 5.11693 2 5.24954C2 5.38215 2.05268 5.50933 2.14645 5.6031C2.24021 5.69686 2.36739 5.74954 2.5 5.74954Z"
+                                            fill="white" />
+                                        <path
+                                            d="M6.5 7.24957C6.63261 7.24957 6.75978 7.19689 6.85355 7.10312C6.94731 7.00935 6.99999 6.88218 7 6.74957V5.74957L13.5 5.74951C13.6326 5.74951 13.7598 5.69683 13.8536 5.60306C13.9473 5.5093 14 5.38212 14 5.24951C14 5.1169 13.9473 4.98973 13.8536 4.89596C13.7598 4.80219 13.6326 4.74951 13.5 4.74951L7 4.74957V3.74957C7 3.61696 6.94732 3.48979 6.85355 3.39602C6.75979 3.30225 6.63261 3.24957 6.5 3.24957C6.36739 3.24957 6.24021 3.30225 6.14645 3.39602C6.05268 3.48979 6 3.61696 6 3.74957V6.74957C6.00001 6.88218 6.05269 7.00935 6.14645 7.10312C6.24022 7.19689 6.36739 7.24957 6.5 7.24957Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                    </div>
-                </section>
 
-                <section class="article-anchor">
-                    <div class="container">
-                        <div class="article-anchor__inner">
-                            <ul>
-                                <li><a href="#text1" class="simple-link active">Знакомство с EDRA</a></li>
-                                <li><a href="#text2" class="simple-link">Рожденная в Тоскане</a></li>
-                                <li><a href="#text3" class="simple-link">Их авторы</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="article-page__content">
-                    <div class="container">
-                        <div class="category-wraper">
-                            <div class="category-text">
-                                <div class="category-text__line step-text" id="text1">
-                                    <h2 class="caption caption--small">Знакомство с EDRA</h2>
-                                    <div class="category-text__text">
-                                        <p>Почему мебель из Италии завоевала признание во всем мире? Поточу что
-                                            итальянцы имеют
-                                            многовековые традиции в дизайне и производстве мебели.</p>
-
-                                        <p>Почему #EDRA заслужили всемирную популярность. Потому что их интерьерные
-                                            решения
-                                            выражают философию итальянского стиля и гостеприимства.</p>
+                        <div class="catalog__leftSide">
+                            <div class="filter-section">
+                                <div class="filter-row">
+                                    <div class="filter-head">
+                                        <span>Категория</span>
+                                    </div>
+                                    <div class="filter-body">
+                                        <ul class="filter-menu">
+                                            <li>
+                                                <a href="#">Все</a>
+                                                <ul class="filter-sub">
+                                                    <li>
+                                                        <a href="#">Мебель</a>
+                                                        <ul>
+                                                            <li><a href="#" class="active">Мягкая мебель</a></li>
+                                                            <li><a href="#">Столы и стулья</a></li>
+                                                            <li><a href="#">Мебель для хранения</a></li>
+                                                            <li><a href="#">Спальня</a></li>
+                                                            <li><a href="#">Мебель для детей и подростков</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-
-                                <div class="pictures">
-                                    <picture class="picture">
-                                        <source type="image/webp" srcset="../../img/pic-category.webp">
-                                        <img src="../../img/pic-category.jpg" alt="">
-                                    </picture>
-
-                                    <picture class="picture">
-                                        <source type="image/webp" srcset="../../img/pic-category.webp">
-                                        <img src="../../img/pic-category.jpg" alt="">
-                                    </picture>
-                                </div>
-
-                                <div class="category-text__line step-text" id="text2">
-                                    <h2 class="caption caption--small">Рожденная в Тоскане</h2>
-                                    <div class="category-text__text">
-                                        <p>История фабрики начинается в 1987 г. Название символизирует развитие
-                                            итальянского
-                                            стиля, берущего начало в Древнем Риме: exedra – элемент римской постройки,
-                                            который можно назвать прапра современному дивану.</p>
-
-                                        <p>Ассортимент компании не ограничивается #диванами — это и #кресла, #обеденные
-                                            столы и стулья, #кровати, различные светильники, декор с узнаваемым
-                                            дизайном, из
-                                            необычных материалов и с безупречным качеством.</p>
+                                <div class="filter-row">
+                                    <div class="filter-head">
+                                        <span>Тип товара</span>
                                     </div>
-                                </div>
-
-                                <picture class="picture">
-                                    <source type="image/webp" srcset="../../img/pic-category.webp">
-                                    <img src="../../img/pic-category.jpg" alt="">
-                                </picture>
-
-                                <div class="category-text__line step-text" id="text3">
-                                    <h2 class="caption caption--small">Их авторы</h2>
-                                    <div class="category-text__text">
-                                        <p>Франческо Бинфаре, Якопо Фогджини, Масанори Умеда, Фернандо и Умберто Кампана
-                                            –
-                                            такие разные и такие прекрасные! Их объединяет великая любовь к творчеству и
-                                            стремление к исследованиям в области дизайна.</p>
-
-                                        <p>Они делают бренд узнаваемым, востребованным и всегда модным. Их интерьерные
-                                            решения вне стиля и времени, их разработки – путь к совершенству.</p>
-
-                                        <p>В Интерьер Маркет полная коллекция мебели #EDRA. Модели доступны из наличия
-                                            со
-                                            склада в Москве и под заказ из каталога.</p>
-                                    </div>
-                                </div>
-
-                                <picture class="picture">
-                                    <source type="image/webp" srcset="../../img/pic-category.webp">
-                                    <img src="../../img/pic-category.jpg" alt="">
-                                </picture>
-
-                            </div>
-                            <div class="category-bar">
-                                <div class="product-card product-cart--sale">
-                                    <picture class="product-card__picture">
-                                        <span class="percent-sale"> -30% </span>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item1.webp">
-                                        <img src="../../img/product-item1.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
+                                    <div class="filter-body">
+                                        <div class="check-list">
+                                            <div class="check-list__inner">
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk1">
+                                                    <label for="chk1">Диваны</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk2">
+                                                    <label for="chk2">Кресла</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk3">
+                                                    <label for="chk3">Пуфы</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk4">
+                                                    <label for="chk4">Банкетки</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk5">
+                                                    <label for="chk5">Шезлонги и кушетки</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk6">
+                                                    <label for="chk6">Подушки для диванов</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk7">
+                                                    <label for="chk7">Диваны в детскую</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk8">
+                                                    <label for="chk8">Диваны в детскую</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk8">
+                                                    <label for="chk8">Диваны в детскую</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk8">
+                                                    <label for="chk8">Диваны в детскую</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk8">
+                                                    <label for="chk8">Диваны в детскую</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk8">
+                                                    <label for="chk8">Диваны в детскую</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk8">
+                                                    <label for="chk8">Диваны в детскую</label>
+                                                </div>
+                                                <div class="check-block">
+                                                    <input type="checkbox" id="chk8">
+                                                    <label for="chk8">Диваны в детскую</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="filter-clear">
+                                    <button class="btn btn-black">
+                                        Очистить фильтры
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.061 11.9999L19.2806 5.78022C19.4211 5.63954 19.5 5.44882 19.5 5.24999C19.4999 5.05117 19.4209 4.8605 19.2803 4.71991C19.1397 4.57932 18.949 4.50031 18.7502 4.50024C18.5514 4.50018 18.3607 4.57907 18.22 4.71958L12.0003 10.9393L5.78064 4.71958C5.63996 4.57907 5.44924 4.50018 5.25041 4.50024C5.05159 4.50031 4.86092 4.57932 4.72033 4.71991C4.57974 4.8605 4.50073 5.05117 4.50067 5.24999C4.5006 5.44882 4.57949 5.63954 4.72 5.78022L10.9397 11.9999L4.72 18.2196C4.65028 18.2892 4.59497 18.3719 4.55722 18.4629C4.51948 18.5539 4.50003 18.6515 4.5 18.75C4.49997 18.8485 4.51935 18.9461 4.55704 19.0371C4.59474 19.1282 4.64999 19.2109 4.71967 19.2805C4.78934 19.3502 4.87205 19.4055 4.96309 19.4432C5.05412 19.4809 5.15169 19.5002 5.25022 19.5002C5.34875 19.5002 5.44631 19.4807 5.53732 19.443C5.62833 19.4052 5.71101 19.3499 5.78064 19.2802L12.0003 13.0605L18.22 19.2802C18.3607 19.4207 18.5514 19.4996 18.7502 19.4995C18.949 19.4995 19.1397 19.4205 19.2803 19.2799C19.4209 19.1393 19.4999 18.9486 19.5 18.7498C19.5 18.551 19.4211 18.3603 19.2806 18.2196L13.061 11.9999Z"
+                                                fill="white" />
+                                        </svg>
 
-                                <div class="article-brand">
-                                    <picture class="picture">
-                                        <source type="image/webp" srcset="../../img/pic-article1.webp">
-                                        <img src="../../img/pic-article1.jpg" alt="">
-                                    </picture>
-                                    <ul class="tag-list">
-                                        <li>
-                                            <span class="tag-white">#Бренды</span>
-                                        </li>
-                                    </ul>
-                                    <a href="#" class="link">Lasvit на выставкев Милане 2022 </a>
-                                    <span class="date">02.05.2023</span>
-                                    <span class="time">Время чтения: 3 минуты</span>
-                                </div>
-
-                                <div class="article-brand">
-                                    <picture class="picture">
-                                        <source type="image/webp" srcset="../../img/pic-article1.webp">
-                                        <img src="../../img/pic-article1.jpg" alt="">
-                                    </picture>
-                                    <ul class="tag-list">
-                                        <li>
-                                            <span class="tag-white">#Бренды</span>
-                                        </li>
-                                    </ul>
-                                    <a href="#" class="link">Lasvit на выставкев Милане 2022 </a>
-                                    <span class="date">02.05.2023</span>
-                                    <span class="time">Время чтения: 3 минуты</span>
-                                </div>
-
-                                <div class="product-card product-cart--sale">
-                                    <picture class="product-card__picture">
-                                        <span class="percent-sale"> -30% </span>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/product-item1.webp">
-                                        <img src="../../img/product-item1.jpg" alt="">
-                                    </picture>
-                                    <div class="product-card__content">
-                                        <span class="product-card__availability product-card__availability--stock">в
-                                            наличии</span>
-                                        <a href="#" class="product-card__brand">Bellavista</a>
-                                        <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                            ashwood / fabric</a>
-                                        <div class="product-card__price">
-                                            <span class="price-current">891 712₽</span>
-                                            <span class="price-old">1 273 875₽</span>
-                                        </div>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
 
-                <section class="products-section">
-                    <div class="container">
-                        <h2 class="caption">товары из материала</h2>
-                        <div class="products__slider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="product-card product-cart--sale">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <span class="percent-sale"> -30% </span>
-                                            <source type="image/webp" srcset="../../img/product-item1.webp" />
-                                            <img src="../../img/product-item1.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span class="price-current">891 712₽</span>
-                                                <span class="price-old">1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item2.webp" />
-                                            <img src="../../img/product-item2.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span
-                                                class="product-card__availability product-card__availability--order">под
-                                                заказ</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span>по запросу</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item3.webp" />
-                                            <img src="../../img/product-item3.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span>1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item4.webp" />
-                                            <img src="../../img/product-item4.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span class="price-current">891 712₽</span>
-                                                <span class="price-old">1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item1.webp" />
-                                            <img src="../../img/product-item1.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span class="price-current">891 712₽</span>
-                                                <span class="price-old">1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item2.webp" />
-                                            <img src="../../img/product-item2.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span
-                                                class="product-card__availability product-card__availability--order">под
-                                                заказ</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span>по запросу</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item3.webp" />
-                                            <img src="../../img/product-item3.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span>1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <a href="#"></a>
-                                        <picture class='product-card__picture'>
-                                            <source type="image/webp" srcset="../../img/product-item4.webp" />
-                                            <img src="../../img/product-item4.jpg" alt="" />
-                                        </picture>
-                                        <div class="product-card__content">
-                                            <span class="product-card__availability product-card__availability--stock">в
-                                                наличии</span>
-                                            <span class="product-card__brand">Bellavista</span>
-                                            <a href="#" class="product-card__name">Диван / CARLOTTA / FRMI Moka stained
-                                                ashwood / fabric</a>
-                                            <div class="product-card__price">
-                                                <span class="price-current">891 712₽</span>
-                                                <span class="price-old">1 273 875₽</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="article-slider">
-                    <div class="container">
-                        <h2 class="caption">читайте также</h2>
-                        <div class="slider-article swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <picture class='picture'>
-                                        <a href="#"></a>
-                                        <source type="image/webp" srcset="../../img/pic-article1.webp" />
-                                        <img src="../../img/pic-article1.jpg" alt="" />
-                                        <ul class="tag-list">
+                        <div class="catalog__rightSide">
+                            <div class="catalog-tags">
+                                <div class="catalog__section">
+                                    <h2 class="caption">Диваны</h2>
+                                    <div class="catalog-tags__col">
+                                        <span class="title">Тип</span>
+                                        <ul class="collections-list">
                                             <li>
-                                                <span class="tag-white">#Бренды</span>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
                                             </li>
                                         </ul>
-                                    </picture>
-                                    <div class="slider-article__info">
-                                        <ul class="tag-list mobile">
+                                    </div>
+                                    <div class="catalog-tags__col">
+                                        <span class="title">Модель</span>
+                                        <ul class="collections-list">
                                             <li>
-                                                <span class="tag-white">#Бренды</span>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
                                             </li>
                                         </ul>
-                                        <a href="#" class="name">Lasvit на выставке в Милане 2022</a>
-                                        <span class="date">02.05.2023</span>
-                                        <span class="read">Время чтения: 3 минуты</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <a href="#" class="link"></a>
-                                    <picture class='picture'>
-                                        <source type="image/webp" srcset="../../img/pic-article1.webp" />
-                                        <img src="../../img/pic-article1.jpg" alt="" />
-                                        <ul class="tag-list">
+                                <div class="catalog__section">
+                                    <h2 class="caption">Кресла</h2>
+                                    <div class="catalog-tags__col">
+                                        <span class="title">Тип</span>
+                                        <ul class="collections-list">
                                             <li>
-                                                <span class="tag-white">#Бренды</span>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
                                             </li>
                                         </ul>
-                                    </picture>
-                                    <div class="slider-article__info">
-                                        <ul class="tag-list mobile">
-                                            <li>
-                                                <span class="tag-white">#Бренды</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#" class="name">Новая концепция современного дома Molteni&C на Salone
-                                            del
-                                            Mobile 2022</a>
-
-                                        <span class="date">02.05.2023</span>
-                                        <span class="read">Время чтения: 3 минуты</span>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" class="link"></a>
-                                    <picture class='picture'>
-                                        <source type="image/webp" srcset="../../img/pic-article1.webp" />
-                                        <img src="../../img/pic-article1.jpg" alt="" />
-                                        <ul class="tag-list">
+                                    <h2 class="caption">Матрасы</h2>
+                                    <div class="catalog-tags__col">
+                                        <span class="title">Тип</span>
+                                        <ul class="collections-list">
                                             <li>
-                                                <span class="tag-white">#Бренды</span>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Бра</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Потолочные светильники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#Встраиваемое освещение</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#кресла</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">#стулья</a>
                                             </li>
                                         </ul>
-                                    </picture>
-                                    <div class="slider-article__info">
-                                        <ul class="tag-list mobile">
-                                            <li>
-                                                <span class="tag-white">#Бренды</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#" class="name">ClassiCon: Новая классика</a>
-                                        <span class="date">02.05.2023</span>
-                                        <span class="read">Время чтения: 3 минуты</span>
                                     </div>
-
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" class="link"></a>
-                                    <picture class='picture'>
-                                        <source type="image/webp" srcset="../../img/pic-article1.webp" />
-                                        <img src="../../img/pic-article1.jpg" alt="" />
-                                        <ul class="tag-list">
-                                            <li>
-                                                <span class="tag-white">#Бренды</span>
-                                            </li>
-                                        </ul>
-                                    </picture>
-                                    <div class="slider-article__info">
-                                        <a href="#" class="name">MINOTTI: роскошь минимализма</a>
-                                        <span class="date">02.05.2023</span>
-                                        <span class="read">Время чтения: 3 минуты</span>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
+            <section class="subscribe-section">
+                <div class="container">
+
+                    <picture class="subscribe-section__picture">
+                        <source type="image/webp" srcset="../../img/primer.webp">
+                        <img src="../../img/primer.png" alt="">
+                    </picture>
+
+                    <div class="subscribe-section__text">
+                        <p>Новые поставки, новости брендов, скидки и многое другое. Узнавайте новости первым —
+                            подписывайтесь на нашу рассылку и telegram-канал.</p>
+                    </div>
+
+                    <div class="subscribe-section__controls">
+                        <div class="input-item">
+                            <input type="email" placeholder="E-mail">
+                            <button class="icon-check">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.49999 12C6.43432 12.0001 6.36929 11.9872 6.30862 11.962C6.24795 11.9369 6.19285 11.9 6.14647 11.8535L2.64647 8.35382C2.60004 8.30739 2.56321 8.25228 2.53808 8.19162C2.51294 8.13096 2.50001 8.06594 2.5 8.00028C2.49999 7.93462 2.51292 7.86961 2.53804 7.80894C2.56316 7.74828 2.59999 7.69316 2.64641 7.64673C2.69284 7.60029 2.74795 7.56346 2.80861 7.53833C2.86927 7.51319 2.93429 7.50026 2.99995 7.50025C3.06561 7.50025 3.13062 7.51317 3.19129 7.53829C3.25195 7.56342 3.30707 7.60024 3.35351 7.64666L6.49999 10.7929L13.1464 4.14669C13.2402 4.05303 13.3673 4.00045 13.4999 4.00049C13.6324 4.00053 13.7595 4.0532 13.8533 4.14692C13.947 4.24064 13.9997 4.36775 13.9997 4.50029C13.9998 4.63284 13.9472 4.75999 13.8536 4.85379L6.85357 11.8535C6.80718 11.9 6.75206 11.9369 6.69138 11.962C6.63071 11.9871 6.56566 12 6.49999 12Z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="input-item input-social">
+                            <a href="#" class="btn-telegram">
+                                <svg class="icon-social" width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.247281 5.75395L3.47316 6.93924L4.72177 10.8924C4.80167 11.1456 5.11615 11.2391 5.32489 11.0712L7.12305 9.62804C7.31154 9.47686 7.58001 9.46929 7.77699 9.61004L11.0203 11.9282C11.2436 12.088 11.5599 11.9675 11.6159 11.7019L13.9918 0.45112C14.0528 0.160955 13.7632 -0.0811116 13.4826 0.0257486L0.243501 5.05366C-0.083212 5.1777 -0.0803653 5.63307 0.247281 5.75395ZM4.52055 6.30828L10.8251 2.48561C10.9385 2.41711 11.055 2.56794 10.9577 2.65679L5.7546 7.41819C5.57171 7.58578 5.45374 7.81004 5.42033 8.05348L5.24308 9.34662C5.21961 9.51925 4.97326 9.53639 4.92487 9.36928L4.24321 7.01133C4.16513 6.74239 4.27891 6.45512 4.52055 6.30828Z"
+                                        fill="black"></path>
+                                </svg>
+                                Telegram</a>
+                        </div>
+                    </div>
+
+                </div>
             </section>
         </main>
 
@@ -994,13 +940,13 @@
 
                         <div class="input-item">
                             <input type="text" placeholder="E-MAIL">
-                            <button class="icon-check">
+                            <span class="icon-check">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M6.49999 12C6.43432 12.0001 6.36929 11.9872 6.30862 11.962C6.24795 11.9369 6.19285 11.9 6.14647 11.8535L2.64647 8.35382C2.60004 8.30739 2.56321 8.25228 2.53808 8.19162C2.51294 8.13096 2.50001 8.06594 2.5 8.00028C2.49999 7.93462 2.51292 7.86961 2.53804 7.80894C2.56316 7.74828 2.59999 7.69316 2.64641 7.64673C2.69284 7.60029 2.74795 7.56346 2.80861 7.53833C2.86927 7.51319 2.93429 7.50026 2.99995 7.50025C3.06561 7.50025 3.13062 7.51317 3.19129 7.53829C3.25195 7.56342 3.30707 7.60024 3.35351 7.64666L6.49999 10.7929L13.1464 4.14669C13.2402 4.05303 13.3673 4.00045 13.4999 4.00049C13.6324 4.00053 13.7595 4.0532 13.8533 4.14692C13.947 4.24064 13.9997 4.36775 13.9997 4.50029C13.9998 4.63284 13.9472 4.75999 13.8536 4.85379L6.85357 11.8535C6.80718 11.9 6.75206 11.9369 6.69138 11.962C6.63071 11.9871 6.56566 12 6.49999 12Z" />
                                 </svg>
-                            </button>
+                            </span>
                         </div>
 
                         <div class="input-item input-social">
@@ -1081,13 +1027,12 @@
                 </button>
                 <a class="header-controls__button btn-basket">
                     <picture>
-                        <source media="(max-width:1023px)" srcset="../../img/basket_white.svg" />
                         <img src="../../img/basket.svg" alt="basket" />
                     </picture>
                     <span class="btn-basket__count">1</span>
                 </a>
                 <div class="input-item">
-                    <input type="text" placeholder="Поиск...">
+                    <input type="text" placeholder="Поиск">
                     <button class="icon-check">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1365,7 +1310,7 @@
     <script src="../../libs/fancybox/fancybox.umd.js"></script>
     <script src="../../libs/inputmask/jquery.inputmask.min.js"></script>
     <script src="../../js/main.js"></script>
-    <script src="article.js"></script>
+    <script src="catalog.js"></script>
 </body>
 
 </html>

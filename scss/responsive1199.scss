@@ -138,8 +138,8 @@
     order: 0;
   }
 
-  .catalog__controls .caption {
-    margin-bottom: 13px;
+  .catalog__controls .caption + .filter-settings {
+    margin-top: 13px;
   }
 
   .catalog-list .product-card .product-card__picture {
@@ -710,5 +710,13 @@
 
   .catalog-settings .select-product-sort .selectric-open .selectric-items {
     width: 180px !important;
+  }
+
+  .catalog-new {
+    padding-top: 30px;
+  }
+
+  .catalog-tags{
+    padding-top: 40px;
   }
 }

@@ -291,6 +291,7 @@
     gap: 24px;
     justify-content: flex-start;
     margin-top: 12px;
+    margin-bottom: 12px;
   }
 
   .catalog-list {
@@ -423,6 +424,10 @@
 
   .catalog__controls .caption {
     margin-bottom: 0;
+  }
+
+  .catalog__controls .caption + .filter-settings {
+    margin-top: 13px;
   }
 
   .catalog-pagination {
@@ -600,6 +605,11 @@
   .siteWrapper {
     overflow: hidden;
   }
+
+  .catalog-new__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
 }
 
 @media (max-width: 739px) {
@@ -758,6 +768,14 @@
 
     &__controls {
       gap: 8px;
+    }
+  }
+
+  .catalog__section {
+    width: 100%;
+
+    & + .catalog__section {
+      margin-top: 40px;
     }
   }
 }

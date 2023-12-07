@@ -454,6 +454,33 @@ $(document).ready(function () {
     initFilterSort();
   }
 
+  if ($(".catalog-new__slider").length > 0) {
+    const sliders = document.querySelectorAll(".catalog-new__slider");
+    let mySwipers = [];
+
+    function sliderinit() {
+      sliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
+
+    sliders.length && sliderinit();
+  }
+
   // ---------------------------------------
 
   // if ($(".modal").length > 0) {
